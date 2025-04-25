@@ -4,45 +4,12 @@ email: zero@zerodumb.dev
 description: "Ethical hacking reflections, recon lab notes, and the hacker's compass."
 baseurl: ""
 url: "https://zerodumb.dev"
-
-# Build settings
-markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-
-# Theme settings
-minima:
-  skin: dark
-
-# Sass settings
 sass:
   style: compressed
-  sass_dir: _sass
-  load_paths:
-    - _sass
-    - assets/css
-
-# Include directories
-include:
-  - _sass
-  - assets/css
-  - assets/js
-
-# Exclude from processing
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-  - vendor
-  - .git/
-  - .github/
-  - .gitignore
-
-# Custom settings
-date_format: "%B %-d, %Y"
-show_excerpts: true
 
 # Link the custom CSS
 include:
