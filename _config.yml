@@ -8,3 +8,34 @@ theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+
+# Build settings
+markdown: kramdown
+permalink: /:categories/:title/
+
+# Sass settings
+sass:
+  style: compressed
+  sass_dir: _sass
+  style_dir: assets/css
+
+# Include directories
+include:
+  - _sass
+  - assets/css
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .git/
+  - .github/
+  - .gitignore
+
+# Link the custom CSS
+include:
+  - assets/css
+
+# Force Jekyll to use the stylesheet

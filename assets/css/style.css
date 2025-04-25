@@ -1,0 +1,23 @@
+body {
+    background-color: #0e0e0e !important;
+    color: #e0e0e0 !important;
+  }
+  
+  a {
+    color: #5cc3ff !important;
+  }
+  
+  h1, h2, h3, h4 {
+    color: #ffffff !important;
+  }
+  
+  code, pre {
+    background-color: #1a1a1a !important;
+    color: #9acd32 !important;
+  }
+  
+  .site-header, .site-footer {
+    background: #121212 !important;
+    color: #999 !important;
+  }
+  
