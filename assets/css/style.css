@@ -1,23 +1,37 @@
+/* === GLOBAL DARK OVERRIDE === */
 body {
-    background-color: #0e0e0e !important;
+    background-color: #0f0f0f !important;
     color: #e0e0e0 !important;
+    font-family: 'Segoe UI', 'Roboto', sans-serif;
   }
   
   a {
-    color: #5cc3ff !important;
+    color: #61dafb !important;
   }
   
-  h1, h2, h3, h4 {
+  h1, h2, h3, h4, h5 {
     color: #ffffff !important;
   }
   
   code, pre {
-    background-color: #1a1a1a !important;
-    color: #9acd32 !important;
+    background-color: #1e1e1e !important;
+    color: #c5f97e !important;
+    padding: 0.25em 0.5em;
+    border-radius: 4px;
   }
   
   .site-header, .site-footer {
-    background: #121212 !important;
-    color: #999 !important;
+    background-color: #121212 !important;
+    color: #cccccc !important;
+    border: none;
+  }
+  
+  .site-title, .site-nav a {
+    color: #ffffff !important;
+  }
+  
+  .site-nav a:hover {
+    color: #61dafb !important;
+    text-decoration: underline;
   }
   

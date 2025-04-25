@@ -11,8 +11,8 @@ plugins:
 sass:
   style: compressed
 
-# Link the custom CSS
+# Include custom CSS
 include:
-  - assets/css
+  - assets/css/style.css
 
 # Force Jekyll to use the stylesheet
