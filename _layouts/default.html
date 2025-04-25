@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title }} | ZeroDumb</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  {% seo %}
+</head>
+<body>
+
+<header class="site-header">
+  <h1 class="site-title"><a href="{{ '/' | relative_url }}">ZeroDumb Ethics Journal</a></h1>
+  <nav class="site-nav">
+    <a href="{{ '/' | relative_url }}">Home</a>
+    <a href="{{ '/ethics' | relative_url }}">Ethics</a>
+  </nav>
+</header>
+
+<main class="site-content">
+  {{ content }}
+</main>
+
+<footer class="site-footer">
+  <p>Made by Zero. Contact: <a href="mailto:zero@zerodumb.dev">zero@zerodumb.dev</a></p>
+</footer>
+
+</body>
+</html>
