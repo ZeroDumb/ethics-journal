@@ -1,0 +1,10 @@
+title: ZeroDumb Ethics Journal
+author: Zero
+email: zero@zerodumb.dev
+description: "Ethical hacking reflections, recon lab notes, and the hacker's compass."
+baseurl: ""
+url: "https://zerodumb.dev"
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
