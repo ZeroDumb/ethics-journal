@@ -51,7 +51,7 @@ const stats = readingTime(content);
           </div>
         </div>
       </div>
-      <RelatedPosts currentSlug={Astro.params.slug} categories={categories} />
+      <RelatedPosts currentSlug={Astro.params.slug || ''} categories={categories} />
     </article>
   </div>
 </Layout>
@@ -79,7 +79,7 @@ const stats = readingTime(content);
       switch(e.key) {
         case 'k':
           e.preventDefault();
-          document.querySelector('#search')?.focus();
+          (document.querySelector('#search') as HTMLElement)?.focus();
           break;
         case 'h':
           e.preventDefault();

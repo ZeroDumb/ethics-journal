@@ -16,8 +16,8 @@ const posts = await getCollection('blog');
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/png" href="/assets/images/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
     <meta name="description" content={description} />
@@ -68,14 +68,20 @@ const posts = await getCollection('blog');
     --terminal-orange: #FFA500;
     --terminal-yellow: #FFFF00;
     --terminal-red: #FF0000;
+    --accent: 124, 58, 237;
+    --accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
   }
   
   html {
     scroll-behavior: smooth;
+    font-family: system-ui, sans-serif;
+    background: #0f0f0f;
+    color: #e0e0e0;
   }
 
   body {
     margin: 0;
+    padding: 0;
     line-height: 1.5;
   }
 
