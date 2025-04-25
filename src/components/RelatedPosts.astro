@@ -1,0 +1,41 @@
+---
+import { getCollection } from 'astro:content';
+
+interface Props {
+  currentSlug: string;
+  categories: string[];
+}
+
+const { currentSlug, categories } = Astro.props;
+
+const posts = await getCollection('blog');
+const relatedPosts = posts
+  .filter(post => 
+    post.slug !== currentSlug && 
+    post.data.categories?.some(cat => categories.includes(cat))
+  )
+  .slice(0, 3);
+---
+
+{relatedPosts.length > 0 && (
+  <div class="mt-12 pt-8 border-t border-gray-800">
+    <h3 class="text-terminal-green text-xl font-bold mb-4">Related Posts</h3>
+    <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+      {relatedPosts.map(post => (
+        <a 
+          href={`/blog/${post.slug}`}
+          class="block bg-gray-800 rounded-lg p-4 hover:bg-gray-700 transition-colors"
+        >
+          <h4 class="text-terminal-cyan font-bold mb-2">{post.data.title}</h4>
+          <div class="flex gap-2 flex-wrap">
+            {post.data.categories?.map(category => (
+              <span class="text-xs bg-gray-900 text-terminal-green px-2 py-1 rounded">
+                {category}
+              </span>
+            ))}
+          </div>
+        </a>
+      ))}
+    </div>
+  </div>
+)}

@@ -1,0 +1,147 @@
+---
+import Search from '../components/Search';
+import { getCollection } from 'astro:content';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = "ZeroDumb Ethics Journal - Ethical hacking reflections, recon lab notes, and the hacker's compass." } = Astro.props;
+
+const posts = await getCollection('blog');
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/png" href="/assets/images/favicon.png" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="author" content="Zero" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://zerodumb.dev" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content="https://zerodumb.dev/assets/images/og-image.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://zerodumb.dev" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content="https://zerodumb.dev/assets/images/og-image.jpg" />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed for ZeroDumb Ethics Journal" href="/rss.xml" />
+  </head>
+  <body class="bg-gray-900 text-gray-100 font-sans">
+    <Search client:load posts={posts} />
+    <header class="border-b border-gray-800">
+      <nav class="max-w-4xl mx-auto px-4 py-4 flex justify-between items-center">
+        <a href="/" class="text-xl font-mono font-bold text-terminal-green hover:text-terminal-cyan">
+          ZeroDumb Ethics Journal
+        </a>
+        <div class="space-x-6">
+          <a href="/blog" class="text-gray-300 hover:text-terminal-green">Blog</a>
+          <a href="/ethics" class="text-gray-300 hover:text-terminal-green">Ethics</a>
+          <a href="https://zerodumb.github.io" class="text-gray-300 hover:text-terminal-green" target="_blank" rel="noopener noreferrer">Other Work</a>
+          <a href="/rss.xml" class="text-gray-300 hover:text-terminal-green" title="RSS Feed">RSS</a>
+        </div>
+      </nav>
+    </header>
+    <main class="max-w-4xl mx-auto px-4 py-8">
+      <slot />
+    </main>
+    <footer class="border-t border-gray-800 mt-12">
+      <div class="max-w-4xl mx-auto px-4 py-6 text-sm text-gray-400">
+        <p>Made by Zero. Contact: <a href="mailto:zero@zerodumb.dev" class="text-terminal-cyan hover:underline">zero@zerodumb.dev</a> | Check out my <a href="https://zerodumb.github.io" class="text-terminal-cyan hover:underline" target="_blank" rel="noopener noreferrer">other work</a></p>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<style is:global>
+  :root {
+    --terminal-green: #00FF00;
+    --terminal-cyan: #00FFFF;
+    --terminal-orange: #FFA500;
+    --terminal-yellow: #FFFF00;
+    --terminal-red: #FF0000;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    line-height: 1.5;
+  }
+
+  code {
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  .prose {
+    color: #e0e0e0;
+  }
+
+  .prose h1, .prose h2, .prose h3, .prose h4 {
+    color: var(--terminal-green);
+  }
+
+  .prose a {
+    color: var(--terminal-cyan);
+    text-decoration: underline;
+  }
+
+  .prose code {
+    background: #1a1a1a;
+    padding: 0.2em 0.4em;
+    border-radius: 0.3em;
+    font-size: 0.9em;
+  }
+
+  .prose pre {
+    background: #1a1a1a;
+    padding: 1em;
+    border-radius: 0.5em;
+    overflow-x: auto;
+  }
+
+  .copy-button {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    padding: 0.25rem 0.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 0.25rem;
+    color: #fff;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+
+  .copy-button:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  .xterm-viewport::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  .xterm-viewport::-webkit-scrollbar-track {
+    background: #1a1a1a;
+  }
+
+  .xterm-viewport::-webkit-scrollbar-thumb {
+    background: #333;
+    border-radius: 5px;
+  }
+
+  .xterm-viewport::-webkit-scrollbar-thumb:hover {
+    background: #444;
+  }
+</style>

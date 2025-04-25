@@ -21,7 +21,6 @@ See [ethics.md](ethics.md) for my personal hacker manifesto and ethical principl
 ## 🔗 Links
 
 - [Blog](https://zerodumb.dev)
-- [Twitter](https://twitter.com/zerodumb)
 - [GitHub](https://github.com/ZeroDumb)
 
 ## 📜 License

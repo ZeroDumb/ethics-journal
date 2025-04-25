@@ -1,0 +1,95 @@
+---
+import Layout from './Layout.astro';
+import { format } from 'date-fns';
+import readingTime from 'reading-time';
+import TableOfContents from '../components/TableOfContents';
+import RelatedPosts from '../components/RelatedPosts.astro';
+import MatrixRain from '../components/MatrixRain';
+
+interface Props {
+  title: string;
+  pubDate: Date;
+  description?: string;
+  categories?: string[];
+}
+
+const { title, pubDate, description, categories = [] } = Astro.props;
+const content = await Astro.slots.render('default');
+const stats = readingTime(content);
+---
+
+<Layout title={title} description={description}>
+  <MatrixRain client:load />
+  <div class="relative">
+    <TableOfContents client:load />
+    <article class="prose prose-lg max-w-none">
+      <div class="terminal-container bg-gray-900 rounded-lg border border-gray-700 overflow-hidden mb-8">
+        <div class="terminal-header bg-gray-800 px-4 py-2 flex justify-between items-center">
+          <span class="text-gray-300 font-mono">zerodumb@ethics-journal:~/posts$</span>
+          <div class="flex space-x-2">
+            <span class="w-3 h-3 rounded-full bg-red-500"></span>
+            <span class="w-3 h-3 rounded-full bg-yellow-500"></span>
+            <span class="w-3 h-3 rounded-full bg-green-500"></span>
+          </div>
+        </div>
+        <div class="p-6">
+          <h1 class="text-terminal-green text-3xl font-bold mb-4">{title}</h1>
+          <div class="flex items-center gap-4 text-sm mb-6">
+            <time class="text-gray-400">{format(pubDate, 'MMMM d, yyyy')}</time>
+            <span class="text-gray-400">·</span>
+            <span class="text-gray-400">{Math.ceil(stats.minutes)} min read</span>
+            {categories.length > 0 && (
+              <div class="flex gap-2">
+                {categories.map(category => (
+                  <span class="bg-gray-800 text-terminal-cyan px-2 py-1 rounded">{category}</span>
+                ))}
+              </div>
+            )}
+          </div>
+          <div class="prose prose-invert">
+            <slot />
+          </div>
+        </div>
+      </div>
+      <RelatedPosts currentSlug={Astro.params.slug} categories={categories} />
+    </article>
+  </div>
+</Layout>
+
+<script>
+  // Add copy button to code blocks
+  document.querySelectorAll('pre').forEach(pre => {
+    const button = document.createElement('button');
+    button.className = 'absolute top-2 right-2 px-2 py-1 text-xs bg-gray-700 text-gray-300 rounded hover:bg-gray-600';
+    button.textContent = 'Copy';
+    button.addEventListener('click', () => {
+      navigator.clipboard.writeText(pre.textContent || '');
+      button.textContent = 'Copied!';
+      setTimeout(() => {
+        button.textContent = 'Copy';
+      }, 2000);
+    });
+    pre.style.position = 'relative';
+    pre.appendChild(button);
+  });
+
+  // Keyboard shortcuts
+  document.addEventListener('keydown', (e) => {
+    if (e.ctrlKey || e.metaKey) {
+      switch(e.key) {
+        case 'k':
+          e.preventDefault();
+          document.querySelector('#search')?.focus();
+          break;
+        case 'h':
+          e.preventDefault();
+          window.location.href = '/';
+          break;
+        case 'b':
+          e.preventDefault();
+          window.location.href = '/blog';
+          break;
+      }
+    }
+  });
+</script>
