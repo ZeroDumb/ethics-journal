@@ -15,4 +15,21 @@ sass:
 include:
   - assets/css/style.css
 
+# SEO settings
+lang: en
+locale: en_US
+twitter:
+  username: zerodumb
+  card: summary_large_image
+  image: /assets/images/og-image.jpg
+
+# Default front matter
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "post"
+      comments: true
+      share: true
+
 # Force Jekyll to use the stylesheet
