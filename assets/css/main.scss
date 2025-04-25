@@ -1,39 +1,127 @@
 @import "minima";
+@import "dark-theme";
 
-// Custom styles
+// Base styles
 body {
+  @include dark-theme;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   line-height: 1.6;
-  color: #333;
 }
 
+// Layout
+.site-header {
+  @include dark-surface;
+  border-bottom: 1px solid $dark-border;
+  padding: 1rem 0;
+}
+
+.site-title {
+  color: $dark-accent;
+  &:hover {
+    color: lighten($dark-accent, 10%);
+  }
+}
+
+.site-nav {
+  .page-link {
+    color: $dark-text-secondary;
+    &:hover {
+      color: $dark-text;
+    }
+  }
+}
+
+// Post styling
 .post-header {
   margin-bottom: 2rem;
+  padding: 2rem 0;
+  border-bottom: 1px solid $dark-border;
 }
 
 .post-title {
+  color: $dark-text;
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
 }
 
 .post-meta {
-  color: #666;
+  color: $dark-text-secondary;
   font-size: 0.9rem;
 }
 
 .post-content {
   max-width: 800px;
   margin: 0 auto;
+  padding: 0 1rem;
+
+  h1, h2, h3, h4, h5, h6 {
+    color: $dark-text;
+    margin-top: 2rem;
+  }
+
+  p {
+    color: $dark-text-secondary;
+    margin-bottom: 1.5rem;
+  }
+
+  a {
+    color: $dark-accent;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  blockquote {
+    @include dark-surface;
+    border-left: 4px solid $dark-accent;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    color: $dark-text-secondary;
+  }
 }
 
 // Code block styling
 pre, code {
-  background-color: #f5f5f5;
-  border-radius: 3px;
+  @include dark-code;
+  border-radius: 4px;
   padding: 0.2em 0.4em;
 }
 
 pre {
   padding: 1em;
   overflow-x: auto;
+  margin: 1.5rem 0;
+}
+
+// List styling
+.post-content {
+  ul, ol {
+    color: $dark-text-secondary;
+    margin-bottom: 1.5rem;
+    padding-left: 2rem;
+  }
+
+  li {
+    margin-bottom: 0.5rem;
+  }
+}
+
+// Footer styling
+.site-footer {
+  @include dark-surface;
+  padding: 2rem 0;
+  margin-top: 3rem;
+  color: $dark-text-secondary;
+}
+
+// Responsive design
+@media screen and (max-width: 800px) {
+  .post-content {
+    padding: 0 1rem;
+  }
+  
+  .post-title {
+    font-size: 2rem;
+  }
 } 
