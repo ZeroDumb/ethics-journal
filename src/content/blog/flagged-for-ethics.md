@@ -1,6 +1,6 @@
 ---
 title: "Flagged as a Phishing Site for Launching an Ethics Blog"
-pubDate: 2025-05-25
+pubDate: 2025-04-25
 categories: ["ethics", "webroot", "dns", "lol"]
 ---
 

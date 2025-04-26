@@ -1,6 +1,6 @@
 ---
 title: "Lab Notes: Week 1 Recon Tools and Seriously...? Moments"
-pubDate: 2025-05-26
+pubDate: 2025-04-23
 categories: ["labs", "recon", "learning"]
 ---
 _WIP_

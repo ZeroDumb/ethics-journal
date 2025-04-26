@@ -3,26 +3,26 @@ import { getCollection, type CollectionEntry } from 'astro:content';
 import ToolsLayout from '../../layouts/tools.astro';
 
 export async function getStaticPaths() {
-  const posts = await getCollection('blog');
-  return posts.map(post => ({
-    params: { slug: post.slug },
-    props: { post },
+  const tools = await getCollection('tools');
+  return tools.map(tool => ({
+    params: { slug: tool.slug },
+    props: { tool },
   }));
 }
 
 interface Props {
-  post: CollectionEntry<'blog'>;
+  tool: CollectionEntry<'tools'>;
 }
 
-const { post } = Astro.props;
-const { Content } = await post.render();
+const { tool } = Astro.props;
+const { Content } = await tool.render();
 ---
 
 <ToolsLayout 
-  title={post.data.title}
-  pubDate={post.data.pubDate}
-  description={post.data.description}
-  categories={post.data.categories}
+  title={tool.data.title}
+  pubDate={tool.data.pubDate}
+  description={tool.data.description}
+  categories={tool.data.categories}
 >
   <Content />
 </ToolsLayout>

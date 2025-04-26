@@ -151,6 +151,13 @@ declare module 'astro:content' {
 
 	type ContentEntryMap = {
 		"blog": {
+"ethics-before-skill.md": {
+	id: "ethics-before-skill.md";
+  slug: "ethics-before-skill";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "flagged-for-ethics.md": {
 	id: "flagged-for-ethics.md";
   slug: "flagged-for-ethics";
@@ -178,6 +185,15 @@ declare module 'astro:content' {
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+};
+"tools": {
+"tools.md": {
+	id: "tools.md";
+  slug: "tools";
+  body: string;
+  collection: "tools";
+  data: InferEntrySchema<"tools">
 } & { render(): Render[".md"] };
 };
 

@@ -1,6 +1,6 @@
 ---
 title: "My Hacker Compass: How I Decide What Not to Build"
-pubDate: 2025-05-24
+pubDate: 2025-04-24
 categories: ["ethics", "mindset"]
 ---
 
