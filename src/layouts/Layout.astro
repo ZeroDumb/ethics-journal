@@ -17,26 +17,40 @@ const posts = await getCollection('blog');
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="generator" content={Astro.generator} />
+    
     <title>{title}</title>
+  
+    <!-- SEO -->
     <meta name="description" content={description} />
     <meta name="author" content="Zero" />
+    <meta name="robots" content="index, follow" />
+  
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://zerodumb.dev" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:image" content="https://zerodumb.dev/src/assets/images/og-image.jpg" />
+    <meta property="og:image" content="/assets/images/og-image.jpg" />
+  
+    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:url" content="https://zerodumb.dev" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
-    <meta name="twitter:image" content="https://zerodumb.dev/src/assets/images/og-image.jpg" />
+    <meta name="twitter:image" content="/og-image.jpg" />
     <meta name="twitter:creator" content="@zerodumb_dev" />
+  
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  
+    <!-- RSS -->
     <link rel="alternate" type="application/rss+xml" title="RSS Feed for ZeroDumb Ethics Journal" href="/rss.xml" />
   </head>
-  <body class="bg-gray-900 text-gray-100 font-sans">
+   <body class="bg-gray-900 text-gray-100 font-sans">
     <Search client:load posts={posts} />
     <header class="border-b border-gray-800">
       <nav class="max-w-4xl mx-auto px-4 py-4">

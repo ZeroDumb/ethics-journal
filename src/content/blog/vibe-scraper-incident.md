@@ -1,12 +1,13 @@
 ---
 title: "When the AI Built a Scraper I Shouldn't Deliver"
-pubDate: 2024-05-01
+pubDate: 2025-05-26
 categories: ["ethics", "ai", "development"]
 ---
 
 A client asked for help populating a new directory. I asked AI for assistance. What I got was a fully wired headless scraper ready to mass-clone someone else's data.
 
-It was fast. It was accurate. It was ethically horrifying.
+It was fast. It was accurate. It was so fast, and so good, that unless you knew what you were looking at, you would assume
+everything was perfectly fine and be exstatic over your new vibe tool. It was ethically horrifying.
 
 This post breaks down what happened, what I learned, and why responsible developers must draw hard lines — even when the client has a checkbook ready.
 
@@ -25,7 +26,9 @@ What could go wrong?
 ## 📬 The Client Request (aka Bob)
 
 Bob (not his real name) was excited.  
-He had a shiny new website. He needed it filled with business listings.
+He had just built a shiny new website, all from text prompts. 
+He needed it filled with business listings.
+He wanted to make it bigger and better and have more functions.
 
 When I asked where the data should come from, Bob shrugged and said:
 > _"I want to use the listings from "example.com", their site is so out of date, and I want to make a better version. Can you just scrape it from their site? I have been using the browser inspect tool and just copying what it says in the code blocks, one listing at a time, and it is all manual work, slow, and no one I have tried hiring has been able to provide a way to capture everything I want. It's all public anyway."_
@@ -53,7 +56,6 @@ In under a minute, the AI delivered:
 - Database upload automation
 - A dashboard to **trigger new scrapes anytime**
 - Even a preview screen to verify it captured all the data requested
-
 
 
 It didn't just build a scraper.  
@@ -161,7 +163,7 @@ In fact, I actually declined to deliver anything outside of the platform build.
 
 1. **Intent doesn't compile.**  
    AI doesn't ask _why_ you want something. It just delivers.
-   Furthermore, AI coding tools are normally pre- injected with prompts on the
+   Furthermore, AI coding tools are normally pre-injected with prompts on the
    platform side, to make their output a certain way, and to do it in as 
    efficient a way as possible. 
 
@@ -170,7 +172,7 @@ In fact, I actually declined to deliver anything outside of the platform build.
    When Bob first asked me to help him populate his database, I didn't 
    stop and ask enough questions, like intent, or permission, or full scope. 
 
-    ## Personal note:
+    _Personal note:_
     In hindsight, it’s important to recognize that not every client shares 
     your standards. While Bob was enthusiastic, there was a clear gap 
     between their expectations and what responsible development should entail. 
@@ -179,9 +181,6 @@ In fact, I actually declined to deliver anything outside of the platform build.
    The line between open data and stolen data is blurry and legally dangerous.
    Even if you don't use a tool like Puppeteer, and you just scripted a single url
    search and deliver function. 
-
-   useMutation, or useQueryClient 
-   or 
 
     ```
     Map scraped property types to valid database types
@@ -194,8 +193,8 @@ In fact, I actually declined to deliver anything outside of the platform build.
     }
     ```
 
-    If it's not yours, or you don't have permission, then why 
-    are you touching it. 
+    If it's not yours, or you don't have permission, then,
+    one must consider whether accessing that data is appropriate.
 
 4. **You are the last line of defense.**  
    Tools don't have ethics. Developers do.

@@ -4,7 +4,7 @@ import { format } from 'date-fns';
 import readingTime from 'reading-time';
 import TableOfContents from '../components/TableOfContents';
 import RelatedPosts from '../components/RelatedPosts.astro';
-import MatrixRain from '../components/MatrixRain';
+import MatrixRain from '../components/MatrixRain.tsx';
 
 interface Props {
   title: string;
@@ -19,7 +19,7 @@ const stats = readingTime(content);
 ---
 
 <Layout title={title} description={description}>
-  <MatrixRain client:load />
+  <MatrixRain client:only="react" />
   <div class="relative">
     <TableOfContents client:load />
     <article class="prose prose-lg max-w-none">
