@@ -151,13 +151,6 @@ declare module 'astro:content' {
 
 	type ContentEntryMap = {
 		"blog": {
-"bolt-scraper-incident.md": {
-	id: "bolt-scraper-incident.md";
-  slug: "bolt-scraper-incident";
-  body: string;
-  collection: "blog";
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".md"] };
 "flagged-for-ethics.md": {
 	id: "flagged-for-ethics.md";
   slug: "flagged-for-ethics";
@@ -175,6 +168,13 @@ declare module 'astro:content' {
 "lab-notes-week-1.md": {
 	id: "lab-notes-week-1.md";
   slug: "lab-notes-week-1";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"vibe-scraper-incident.md": {
+	id: "vibe-scraper-incident.md";
+  slug: "vibe-scraper-incident";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">

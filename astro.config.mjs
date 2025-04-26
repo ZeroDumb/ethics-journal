@@ -27,7 +27,7 @@ export default defineConfig({
     lang: 'en',
     locale: 'en_US',
     twitter: {
-      username: 'zerodumb',
+      username: 'zerodumb_dev',
       card: 'summary_large_image',
       image: '/src/assets/images/og-image.jpg'
     }

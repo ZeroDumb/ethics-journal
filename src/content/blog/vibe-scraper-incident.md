@@ -62,7 +62,8 @@ It built this, not in a cli, not in some random backdoor.
 
 The AI assistant, from a very popular and very new indie SID (that shall remain unnamed), built this whole thing, then wrapped it 
 in node.js, react, tailwind, and fancy buttons, as if it was like, hey here's your pretty new app. I mean
-this thing even linked it to a database for querying later. 
+this thing even linked it to a database for querying later. Not to be malicious in any way, shape, or form-- it was just
+too good at its job.
 
 Here's a simplified example of what the AI generated (for demonstration purposes only):
 
@@ -111,7 +112,7 @@ async function scrapeBulkUrls(urls) {
 
 Here's a look at the auto-generated scraper dashboard created by the AI:
 
-![Admin Portal Interface](/assets/images/bolt-case-study/scraper-example.png)
+![Admin Portal Interface](/assets/images/vibe-case-study/scraper-example.png)
 
 ---
 
@@ -119,7 +120,7 @@ Here's a look at the auto-generated scraper dashboard created by the AI:
 
 After scraping, it allowed data review and rapid publishing:
 
-![Review Details Interface](/assets/images/bolt-case-study/scraper2.png)
+![Review Details Interface](/assets/images/vibe-case-study/scraper2.png)
 
 ---
 
@@ -134,8 +135,8 @@ No one — client, freelancer, AI, or platform — had ever stopped to ask:
 - Is this legal?
 - Could this be seen as theft or copyright issues?
 - Just because you can easily see the listings (even without using inspect, like Bob)
-    which i mean, why not just open each tab and just view the listings, it is 
-    a puvlic facing, non-gated, directory. 
+    which I mean, why not just open each tab and view the listings, it is 
+    a public facing, non-gated, directory. 
 
 It was just assumed that building it was inherently okay because the tech allowed it.
 
@@ -153,7 +154,6 @@ In fact, I actually declined to deliver anything outside of the platform build.
 - no data, no database outside of bare bones. just a pretty platform ready for 
     Bob to manually type in whatever he wants. 
 
--- More on Bob in another post, he's a charm for sure.
 
 ---
 
@@ -170,30 +170,32 @@ In fact, I actually declined to deliver anything outside of the platform build.
    When Bob first asked me to help him populate his database, I didn't 
    stop and ask enough questions, like intent, or permission, or full scope. 
 
-   Personal note: I should have told Bob, to go build his own thing, Bob isn't
-   a great person. 
+    ## Personal note:
+    In hindsight, it’s important to recognize that not every client shares 
+    your standards. While Bob was enthusiastic, there was a clear gap 
+    between their expectations and what responsible development should entail. 
 
 3. **Scraping is not always innocent.**  
    The line between open data and stolen data is blurry and legally dangerous.
    Even if you don't use a tool like Puppeteer, and you just scripted a single url
    search and deliver function. 
-   ``` 
+
    useMutation, or useQueryClient 
    or 
 
-   "Map scraped property types to valid database types
-    function mapPropertyType(scrapedType: string): string {
-  const normalized = scrapedType.toLowerCase().replace(/ /g, '_');
-  
-  // Direct matches
-  if (VALID_PROPERTY_TYPES.includes(normalized)) {
-    return normalized;
-  }"
+    ```
+    Map scraped property types to valid database types
+        function mapPropertyType(scrapedType: string): string {
+    const normalized = scrapedType.toLowerCase().replace(/ /g, '_');
+    
+    // Direct matches
+    if (VALID_PROPERTY_TYPES.includes(normalized)) {
+        return normalized;
+    }
+    ```
 
-```
     If it's not yours, or you don't have permission, then why 
     are you touching it. 
-```
 
 4. **You are the last line of defense.**  
    Tools don't have ethics. Developers do.

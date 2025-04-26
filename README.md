@@ -16,7 +16,7 @@ A public lab journal and thought space documenting the ethical hacking journey o
 
 ## 🧭 Hacker Manifesto
 
-See [ethics.md](ethics.md) for my personal hacker manifesto and ethical principles.
+See [ethics.md](ethics.astro) for my personal hacker manifesto and ethical principles.
 
 ## 🔗 Links
 
