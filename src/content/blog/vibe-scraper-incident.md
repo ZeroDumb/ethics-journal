@@ -114,7 +114,7 @@ async function scrapeBulkUrls(urls) {
 
 Here's a look at the auto-generated scraper dashboard created by the AI:
 
-![Admin Portal Interface](/assets/images/vibe-case-study/scraper-example.png)
+![scraper example](https://github.com/user-attachments/assets/cd8b5d6f-6eee-4297-87b3-2f6496a2e76f)
 
 ---
 
@@ -122,7 +122,7 @@ Here's a look at the auto-generated scraper dashboard created by the AI:
 
 After scraping, it allowed data review and rapid publishing:
 
-![Review Details Interface](/assets/images/vibe-case-study/scraper2.png)
+![scaper2](https://github.com/user-attachments/assets/dd4653dd-f533-4f88-9136-78cb39a25663)
 
 ---
 
