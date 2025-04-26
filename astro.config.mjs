@@ -29,7 +29,7 @@ export default defineConfig({
     twitter: {
       username: 'zerodumb',
       card: 'summary_large_image',
-      image: '/assets/images/og-image.jpg'
+      image: '/src/assets/images/og-image.jpg'
     }
   },
   // Default front matter for all pages

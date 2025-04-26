@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="32" height="32">
+  <!-- Skull base -->
+  <circle cx="50" cy="50" r="45" fill="#1a1a1a" stroke="#61dafb" stroke-width="2"/>
+  
+  <!-- Skull shape -->
+  <path d="M30,40 Q50,20 70,40 Q70,60 50,80 Q30,60 30,40" fill="#333" stroke="#61dafb" stroke-width="1.5"/>
+  
+  <!-- Eye sockets -->
+  <circle cx="35" cy="40" r="5" fill="#0f0f0f"/>
+  <circle cx="65" cy="40" r="5" fill="#0f0f0f"/>
+  
+  <!-- Glowing eyes -->
+  <circle cx="35" cy="40" r="2" fill="#61dafb"/>
+  <circle cx="65" cy="40" r="2" fill="#61dafb"/>
+  
+  <!-- Binary code in background -->
+  <text x="20" y="30" font-family="monospace" font-size="6" fill="#61dafb" opacity="0.5">10101</text>
+  <text x="70" y="70" font-family="monospace" font-size="6" fill="#61dafb" opacity="0.5">01010</text>
+  
+  <!-- Mask straps -->
+  <path d="M30,40 Q20,50 20,60" stroke="#61dafb" stroke-width="1.5" fill="none"/>
+  <path d="M70,40 Q80,50 80,60" stroke="#61dafb" stroke-width="1.5" fill="none"/>
+</svg> 
