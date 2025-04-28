@@ -12,9 +12,12 @@ Within minutes of configuring my custom domain (`zerodumb.dev`) and pointing it 
 
 > _"Website Blocked: Phishing Site (RT)"_
 
+![Screenshot 2025-04-25 153924](https://github.com/user-attachments/assets/3bf890c4-5cae-4869-aaaa-cc3cd7913c82)
+
+
 Apparently, my barely-functional skeleton of a blog had already earned a spot in the Red Room of the Internet. You know, the one where you get accused of trying to steal logins and passwords before you've even published a contact form.
 
-## 🤔 Why Did This Happen?
+## Why Did This Happen?
 
 **Reason #1: I'm Too New**  
 New domains, especially `.dev` TLDs, are under hyper-scrutiny.
@@ -43,7 +46,7 @@ If you're launching an infosec blog or recon project:
 - Be aware that some security vendors will flag you for breathing
 - Embrace it—it means you're doing something interesting
 
-## 🎯 Final Thought
+## Final Thought
 
 Being flagged as a phishing site **within 30 minutes of creating a site about ethics** is possibly the most poetic moment in my short-but-intense recon journey.
 
