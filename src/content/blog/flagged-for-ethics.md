@@ -56,3 +56,6 @@ Human, not phishing bot
 `zero@zerodumb.dev`
 
 *Yes, I submitted the site for reclassification. No, I'm not mad. This is the best kind of irony: the kind you can blog about.*
+
+![Screenshot 2025-04-28 144702](https://github.com/user-attachments/assets/7313ef81-d4e7-4d6c-9e9e-6fc979db8fe8)
+
