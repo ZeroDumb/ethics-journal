@@ -62,7 +62,7 @@ possible.
 
 I cover an in depth example of this discovery: [When the AI Built a Scraper I Shouldn't Deliver](/blog/vibe-scraper-incident/) — the moment I realized AI doesn’t care about ethics unless you make it.
 
-My compass doesn't have to be yours, it doesn't even have to close, but I do believe that once you discover certain 
+My compass doesn't have to be yours, it doesn't even have to be close, but I do believe that once you discover certain 
 tools, abilities, or expertise, you must develop some form of "north star". Your beliefs, your standards, your boundaries. 
 
 > "If clients think you will do anything for the right amount of money, then you will always find clients willing to pay you that amount."
@@ -92,6 +92,7 @@ For me, it was never a lack of discipline. In fact, I was very much "disciplined
 (This isn’t a sob story — it’s just a truth.)
 
 Here's what I know now:
+
 Just because someone says you can't, doesn't mean you can't.  
 It might just mean **they** couldn't.  
 Even if it hurts. Even if it costs you something.
