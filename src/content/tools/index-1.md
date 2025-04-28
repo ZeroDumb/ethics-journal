@@ -9,7 +9,7 @@ categories: ["toolkit", "resources", "development", "enumeration", "OSINT"]
 
 When it comes to ethical hacking and digital reconnaissance, having the right tools is only half the equation. The other half is knowing when and how to use them responsibly. This growing collection represents my journey in building and customizing tools that prioritize ethical considerations alongside technical capabilities.
 
-## 🛠️ Reconnaissance & Enumeration Tools
+## Reconnaissance & Enumeration Tools
 
 ### Recon-Toolkit
 *A modular Python toolkit for lightweight recon and passive footprinting.*
@@ -31,8 +31,11 @@ This framework represents my attempt to systematize the reconnaissance process w
 - Build consistent, repeatable processes
 - Maintain clear documentation
 - Enforce ethical boundaries programmatically
+- It is also an AI assisted mayhem infused, character and lore driven, CLI tool
 
-## 🧰 Scripts & Utilities in Development
+
+
+## Scripts & Utilities in Development
 
 ### DNS Quick Resolve
 *A lightweight DNS resolver for mapping subdomains without tripping alarms.*
@@ -53,7 +56,7 @@ This framework represents my attempt to systematize the reconnaissance process w
 - Historical data aggregation
 - Clear audit trails
 
-## 📚 Essential Reading & Resources
+## Essential Reading & Resources
 
 I've found these resources invaluable in developing both technical skills and ethical awareness:
 
@@ -66,7 +69,7 @@ I've found these resources invaluable in developing both technical skills and et
 - [Bugcrowd University](https://www.bugcrowd.com/hackers/bugcrowd-university/)  
   *Structured learning for ethical hacking*
 
-## 🚧 Ethical Framework & Disclaimer
+## Ethical Framework & Disclaimer
 
 Every tool in this collection is developed with a strict ethical framework:
 
@@ -83,6 +86,10 @@ Every tool in this collection is developed with a strict ethical framework:
    Every function and feature is documented with both technical and ethical considerations.
 
 Remember: These tools are for educational and ethical use only. I do not condone malicious use, and every tool is built with defensive research and educational purposes in mind.
+
+I am still building and learning, if you like them great, if you don't, that's great too. They are mine, they may suck a little, but I built them. 
+
+Thanks,
 
 ---
 

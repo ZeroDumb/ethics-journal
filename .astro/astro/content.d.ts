@@ -195,9 +195,9 @@ declare module 'astro:content' {
 } & { render(): Render[".md"] };
 };
 "tools": {
-"tools.md": {
-	id: "tools.md";
-  slug: "tools";
+"index-1.md": {
+	id: "index-1.md";
+  slug: "index-1";
   body: string;
   collection: "tools";
   data: InferEntrySchema<"tools">
