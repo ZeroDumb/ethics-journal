@@ -88,15 +88,33 @@ I would spend 5 hours studying a 1 hour task, trying to concoct a way to turn th
 
 There was no such thing as ADHD or any other acronym when I was a child. You were either lazy, or lacked proper discipline at home. 
 
-For me, I never lacked discipline, in fact I was very much "disciplined", no this isn't some sob story, I am just pointing out a simple truth;
-just because some one says you can't doesn't mean you can't, it might just mean that they can't or couldn't. Even if it hurts, or comes at
-a cost. My cost for curiosity was corporal, your cost may be time, or money or whatever. Don't be reckless enough to end up on a flyer. Remember: _don't be dumb_, but don't be a sheep either. 
+For me, it was never a lack of discipline. In fact, I was very much "disciplined."  
+(This isn’t a sob story — it’s just a truth.)
 
-25 years ago tools like TryHackMe and HackTheBox din't exist, the internet barely existed for most people. Today, people can learn, and try, and build within boundaries, and safety nets. This isn't just tech related either, and I can't pretend that me goofing off after school was the equivalent to some master plan.
-The hacker mindset spreads to all areas, I would argue that it's the type of mindset that spark innovation all over the world, it just goes by different names; curiosity, explorer, adventurer, inventor, creator, builder, maker, entrepreneur, and so on. 
+Here's what I know now:
+Just because someone says you can't, doesn't mean you can't.  
+It might just mean **they** couldn't.  
+Even if it hurts. Even if it costs you something.
 
-The mindset is the tool, it just so happens that sometimes, good people do dumb things, a lot of times it is totally unintentional (I will give you all the benefit of the doubt), and sometimes it is misguided, and yes there's plenty of dirtballs out there too.
+My cost for curiosity was corporal. Yours might be time, money, or something else.  
+Don't be reckless enough to end up on a flyer. Remember: *don't be dumb, but don't be a sheep either.*
 
+25 years ago, platforms like <a href="https://tryhackme.com" target="_blank" rel="noopener noreferrer">TryHackMe &#8599;</a> and <a href="https://www.hackthebox.com" target="_blank" rel="noopener noreferrer">Hack The Box &#8599;</a> didn’t exist.
+The internet barely existed for most people.
+
+Today, you can learn, build, break, and explore within real boundaries — with safety nets that barely existed when I was growing up.
+
+This isn't just about tech, either.  
+The hacker mindset touches every part of life.  
+Some call it curiosity, exploration, invention, entrepreneurship — but it's the same spirit.
+
+The mindset *is* the tool.  
+Sometimes good people do dumb things.  
+Sometimes it's unintentional. Sometimes it's misguided.  
+And yes — sometimes, there are real dirtbags out there too.
+
+Don't be that person.  
+Mmkay? Thanks.
 
 ---
 
