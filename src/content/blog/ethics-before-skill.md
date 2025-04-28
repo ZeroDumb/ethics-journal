@@ -13,7 +13,7 @@ Turns out, the real danger is a lack of ethical clarity.
 
 ---
 
-## 🧠 What I Thought at First
+## What I Thought at First
 
 I believed that if I couldn’t build advanced scripts, bypass security, or understand every line of network traffic...  
 then I wasn’t a "threat" to anything or anyone.  
@@ -30,7 +30,7 @@ A beginner with good intent + humility = real growth.
 
 ---
 
-## ⚡ Why Ethical Intent Matters More Early On
+## Why Ethical Intent Matters More Early On
 
 - **Mistakes Happen:**  
   You *will* accidentally overstep. It’s inevitable. Ethical intent ensures you correct and learn, not rationalize and hide it.
@@ -46,7 +46,7 @@ A beginner with good intent + humility = real growth.
 
 ---
 
-## 🔥 Lessons I've Started Living By
+## Lessons I've Started Living By
 
 - I ask: "**Should I?**" more often than "**Can I?**"
 - I don't trust AI tools to make ethical calls for me.
@@ -56,7 +56,7 @@ A beginner with good intent + humility = real growth.
 
 ---
 
-## 🛡️ Closing Thought
+## Closing Thought
 
 Your skills will grow automatically if you stay curious and consistent.  
 But your **ethics** need intentional work, every day.
@@ -64,6 +64,6 @@ But your **ethics** need intentional work, every day.
 **Talent is not what makes you dangerous.  
 Intent is.**
 
-Stay sharp, stay grounded, stay good.
+Stay sharp. Stay grounded. Stay curious. Stay good.
 
 ---

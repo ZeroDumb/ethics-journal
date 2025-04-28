@@ -121,4 +121,6 @@ Choose wisely.
 
 - [My Hacker Compass: How I Decide What Not to Build](/blog/hacker-compass/)
 
+Stay sharp. Stay grounded. Stay curious. Stay loud.
+
 ---

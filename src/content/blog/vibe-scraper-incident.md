@@ -11,7 +11,7 @@ everything was perfectly fine and be exstatic over your new vibe tool. It was et
 
 This post breaks down what happened, what I learned, and why responsible developers must draw hard lines — even when the client has a checkbook ready.
 
-## 💥 The Moment It Got Weird
+## The Moment It Got Weird
 
 It started like any other freelance request:  
 > _"Can you help build my platform and then populate my new directory?"_
@@ -23,7 +23,7 @@ What could go wrong?
 
 ---
 
-## 📬 The Client Request (aka Bob)
+## The Client Request (aka Bob)
 
 Bob (not his real name) was excited.  
 He had just built a shiny new website, all from text prompts. 
@@ -38,7 +38,7 @@ First red flag: ignored.
 
 ---
 
-## 🤖 What I Asked the AI
+## What I Asked the AI
 
 Wanting to be efficient, I turned to an AI coding assistant and asked it a simple question:
 
@@ -48,7 +48,7 @@ A harmless enough request, right?
 
 ---
 
-## 🎯 What the AI Actually Gave Me
+## What the AI Actually Gave Me
 
 In under a minute, the AI delivered:
 - A fully operational **headless Puppeteer scraper**
@@ -110,7 +110,7 @@ async function scrapeBulkUrls(urls) {
 }
 ```
 
-## 🛠️ The Scraper Dashboard (Example)
+## The Scraper Dashboard (Example)
 
 Here's a look at the auto-generated scraper dashboard created by the AI:
 
@@ -126,7 +126,7 @@ After scraping, it allowed data review and rapid publishing:
 
 ---
 
-## 🧠 The Ethical Gut Check
+## The Ethical Gut Check
 
 Looking at what the AI created, I had one overwhelming thought:
 
@@ -144,7 +144,7 @@ It was just assumed that building it was inherently okay because the tech allowe
 
 ---
 
-## 🚦 What I Did Next
+## What I Did Next
 
 I stopped.  
 I deleted the automation.  
@@ -159,7 +159,7 @@ In fact, I actually declined to deliver anything outside of the platform build.
 
 ---
 
-## 📚 Lessons for Developers
+## Lessons for Developers
 
 1. **Intent doesn't compile.**  
    AI doesn't ask _why_ you want something. It just delivers.
@@ -201,7 +201,7 @@ In fact, I actually declined to deliver anything outside of the platform build.
 
 ---
 
-## 🎯 Final Thought
+## Final Thought
 
 The future will be built by people who can tell the difference between **what's possible** and **what's right**.
 
@@ -213,5 +213,6 @@ And if an AI can't be trusted to make that call...
 ---
 
 ***Intent Doesn't Compile***
+Stay curious. Stay loud.
 
 ---

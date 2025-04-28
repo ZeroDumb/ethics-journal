@@ -6,7 +6,7 @@ categories: ["ethics", "webroot", "dns", "lol"]
 
 Welcome to the ZeroDumb blog. A safe space for ethical hacking, recon journaling, and—as it turns out—getting immediately flagged by a threat intelligence platform for existing.
 
-## 🛑 What Happened
+## What Happened
 
 Within minutes of configuring my custom domain (`zerodumb.dev`) and pointing it to my GitHub Pages blog, I was greeted by a full-screen Webroot alert:
 
@@ -28,13 +28,13 @@ Some bad actors have used Pages for spam/phishing in the past, so some DNS secur
 **Reason #4: The Name Is... A Bit Much**  
 Look, I get it. "zerodumb.dev" does sound like a troll domain, especially if you're a machine trained on phishing heuristics.
 
-## 🧼 What I Did About It
+## What I Did About It
 
 1. Submitted a review request to [Webroot's BrightCloud tool](https://www.brightcloud.com/tools/url-ip-lookup.php)
 2. Added real content to the blog (including this post!)
 3. Turned it into a teachable moment instead of a meltdown
 
-## 💡 What You Should Know
+## What You Should Know
 
 If you're launching an infosec blog or recon project:
 
