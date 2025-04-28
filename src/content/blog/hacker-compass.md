@@ -13,7 +13,7 @@ If more developers built one too, the internet would be safer by accident.
 
 ---
 
-## ❓ The Questions I Always Ask
+## The Questions I Always Ask
 
 - **Would I want someone doing this to me, my family, or my company?**
 - **If this project leaked into the wild, could it cause damage beyond my control?**
@@ -24,7 +24,7 @@ If more developers built one too, the internet would be safer by accident.
 
 ---
 
-## 📚 Lessons Learned (the hard way)
+## Lessons Learned (the hard way)
 
 I've already seen it:  
 Clients asking for tools that *feel* innocent... until you realize what they're really for.  
@@ -43,7 +43,7 @@ completely different intent and outcomes.
 
 ---
 
-## 🌍 Why It Matters
+## Why It Matters
 
 Most security breaches aren't masterminded by villains.  
 They're the result of lazy builders, naive coders, and people who *never bothered to ask better questions.*
@@ -60,7 +60,7 @@ When I first started all this, it was a total fluke, like a happy little acciden
 why not. Sort of, curiosity, meets I can't believe that is possible. I wanted to learn more, and see what else is
 possible. 
 
-     I cover an in depth example of this discovery: [When the AI Built a Scraper I Shouldn't Deliver](/blog/vibe-scraper-incident/) — the moment I realized AI doesn’t care about ethics unless you make it.
+I cover an in depth example of this discovery: [When the AI Built a Scraper I Shouldn't Deliver](/blog/vibe-scraper-incident/) — the moment I realized AI doesn’t care about ethics unless you make it.
 
 My compass doesn't have to be yours, it doesn't even have to close, but I do believe that once you discover certain 
 tools, abilities, or expertise, you must develop some form of "north star". Your beliefs, your standards, your boundaries. 
@@ -81,7 +81,7 @@ Since I was a very small kid, I can remember breaking things, disassembling them
 
 ---
 
-## Some call it laziness
+## Some Call It Laziness
 
 One day I had to do a chore, I spent so much time planning and trying to figure out how to do the chore faster, that I could have finished 4 times. 
 I would spend 5 hours studying a 1 hour task, trying to concoct a way to turn the 1 hour task into a 30 minute task. 
@@ -100,7 +100,7 @@ The mindset is the tool, it just so happens that sometimes, good people do dumb 
 
 ---
 
-## 🧠 Final Thought
+## Final Thought
 
 The goal isn’t to be perfect.  
 The goal is to never become the mistake.
