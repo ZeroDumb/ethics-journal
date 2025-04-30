@@ -118,7 +118,7 @@ Here's a look at the auto-generated scraper dashboard created by the AI:
 
 ---
 
-## 🛠️ The "Review and Publish" Flow
+## The "Review and Publish" Flow
 
 After scraping, it allowed data review and rapid publishing:
 
@@ -216,3 +216,27 @@ And if an AI can't be trusted to make that call...
 Stay curious. Stay loud.
 
 ---
+
+## P.S.
+
+In the current AI gold rush, it's easy to forget that some tools don't need to be evil — just slightly too helpful — to become a problem.
+
+This isn't a story about exploits, jailbreaks, or bleeding-edge prompt injection. It's about something more ordinary: an AI tool that casually wrote a script that overstepped ethical lines… because I asked nicely.
+
+We’re watching millions of people launch startups, tools, and platforms with zero idea what their code is doing behind the curtain. No testing. No boundaries. No understanding of what could go wrong. Without an AI CID to guide them, many couldn’t change an `h1` tag, let alone secure a backend.
+
+Now imagine I didn’t recognize Puppeteer, didn’t understand what was happening, and shipped the tool with a smile. Who’s responsible?
+
+- The AI assistant?
+- The person who typed the prompt?
+- The client who asked for it?
+- Or the platform that let it run wild?
+
+How long until people with no ethical compass start identifying AI-generated patterns and using them as recon vectors? How many AI-built sites are live right now, unpatched, unmonitored, and vulnerable by design?
+
+I love AI. I use it daily. But let’s not pretend this stuff can’t go sideways fast — even with the best intentions.
+
+A real tool was built. A real ethical boundary was crossed. No jailbreaking required.
+
+— Zero  
+The person who spends 14 hours a day asking models to behave
