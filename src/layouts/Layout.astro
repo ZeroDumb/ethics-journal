@@ -96,7 +96,8 @@ const posts = await getCollection('blog');
         <script src="https://links.scalingsuccess.io/js/form_embed.js"></script>
             
         <p class="mt-12 mb-20 text-gray-600">
-          Built by Zero. Contact: <a href="mailto:zero@zerodumb.dev" class="underline hover:text-white">zero@zerodumb.dev</a>
+          Built by Zero. Contact: <a href="mailto:zero@zerodumb.dev" class="underline hover:text-white">zero@zerodumb.dev</a> | 
+          Checkout some of my other <a href="https://zerodumb.github.io/" class="underline hover:text-white" target="_blank" rel="noopener noreferrer">scripts, tools, & projects</a>
         </p>
     
       </div>
@@ -113,6 +114,7 @@ const posts = await getCollection('blog');
     --terminal-red: #FF0000;
     --accent: 124, 58, 237;
     --accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
+    --terminal-opacity: 0.90;
   }
   
   html {
@@ -192,5 +194,13 @@ const posts = await getCollection('blog');
 
   .xterm-viewport::-webkit-scrollbar-thumb:hover {
     background: #444;
+  }
+
+  .terminal-container {
+    background-color: rgba(17, 24, 39, var(--terminal-opacity));
+  }
+
+  .terminal-body {
+    background-color: rgba(17, 24, 39, var(--terminal-opacity));
   }
 </style>
