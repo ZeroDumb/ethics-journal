@@ -186,6 +186,13 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"red-flag-clients.md": {
+	id: "red-flag-clients.md";
+  slug: "red-flag-clients";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "vibe-scraper-incident.md": {
 	id: "vibe-scraper-incident.md";
   slug: "vibe-scraper-incident";
