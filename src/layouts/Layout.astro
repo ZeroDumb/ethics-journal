@@ -56,11 +56,14 @@ const posts = await getCollection('blog');
         (eventName: string, options?: { props: Record<string, any> }): void;
         q?: unknown[];
       }
-    
-      (window as unknown as { plausible: Plausible }).plausible = function() {
-        ((window as any).plausible.q = (window as any).plausible.q || []).push(arguments);
-      };
-    </script>    
+    </script>
+    <script defer data-domain="zerodumb.dev" src="https://plausible.io/js/script.hash.outbound-links.js"></script>
+    <script>
+      (window as any).plausible = (window as any).plausible || function() { 
+        ((window as any).plausible.q = (window as any).plausible.q || []).push(arguments) 
+      }
+    </script>
+     
   </head>
    <body class="bg-gray-900 text-gray-100 font-sans">
     <Search client:load posts={posts} />
