@@ -1,0 +1,51 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="OSINT & Recon Services" description="A lightweight offering for founders and developers.">
+  <div class="terminal-container rounded-lg border border-gray-700 overflow-hidden">
+    <div class="terminal-header bg-gray-800 px-4 py-2 flex justify-between items-center">
+      <span class="text-gray-300 font-mono">zerodumb@ethics-journal:~/services$</span>
+      <div class="flex space-x-2">
+        <span class="w-3 h-3 rounded-full bg-red-500"></span>
+        <span class="w-3 h-3 rounded-full bg-yellow-500"></span>
+        <span class="w-3 h-3 rounded-full bg-green-500"></span>
+      </div>
+    </div>
+    <div class="prose prose-invert max-w-none p-6">
+      <h1 class="text-terminal-green">OSINT Reports for Builders & Startups</h1>
+      <p>Simple, ethical surface scans. No drama. No risk. No shady code.</p>
+
+      <h2 class="text-terminal-green">📂 Overview</h2>
+      <ul>
+        <li>Public metadata scan (emails, GitHub, Google dorks)</li>
+        <li>Subdomain visibility check</li>
+        <li>Credential leak review (HaveIBeenPwned etc.)</li>
+        <li>Basic security recommendations</li>
+      </ul>
+
+      <a href="mailto:zero@zerodumb.dev" class="inline-block mt-4 px-4 py-2 bg-green-700 hover:bg-green-500 text-white rounded">
+        Request a Report
+      </a>
+
+      <h2 class="text-terminal-cyan">📂 Expanded Services</h2>
+      <p>These aren’t ‘buy now’ buttons. These are ‘email me if you’re serious’ services.</p>
+<ul>
+  <li><a href="/osint-lite" class="text-terminal-cyan hover:underline">OSINT Lite Scan</a></li>
+  <li><a href="/agent-setup" class="text-terminal-cyan hover:underline">AI Agent Setup</a></li>
+  <li><a href="/audit" class="text-terminal-cyan hover:underline">Automation Audit</a></li>
+</ul>
+        <p class="mt-8 text-sm text-gray-400">
+            Most of this, I don't do for the money. I do it to learn. If you want to support my caffeine habit, 
+            <a 
+            href="https://buymeacoffee.com/iamnotaskid" 
+            class="text-terminal-yellow hover:text-terminal-green"
+            target="_blank" 
+            rel="noopener noreferrer"
+            >
+            buy me coffee
+            </a>.
+        </p>    
+    </div>
+  </div>
+</Layout>

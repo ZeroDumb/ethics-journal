@@ -49,6 +49,18 @@ const posts = await getCollection('blog');
   
     <!-- RSS -->
     <link rel="alternate" type="application/rss+xml" title="RSS Feed for ZeroDumb Ethics Journal" href="/rss.xml" />
+
+    <!-- Analytics -->
+    <script>
+      interface Plausible {
+        (eventName: string, options?: { props: Record<string, any> }): void;
+        q?: unknown[];
+      }
+    
+      (window as unknown as { plausible: Plausible }).plausible = function() {
+        ((window as any).plausible.q = (window as any).plausible.q || []).push(arguments);
+      };
+    </script>    
   </head>
    <body class="bg-gray-900 text-gray-100 font-sans">
     <Search client:load posts={posts} />
@@ -61,6 +73,8 @@ const posts = await getCollection('blog');
           <div class="flex flex-wrap justify-center gap-4 sm:gap-6 text-sm sm:text-base">
             <a href="/blog" class="text-gray-300 hover:text-terminal-green">Blog</a>
             <a href="/ethics" class="text-gray-300 hover:text-terminal-green">Ethics</a>
+            <a href="/about" class="text-gray-300 hover:text-terminal-green">About</a>
+            <a href="/services" class="text-gray-300 hover:text-terminal-green">Services</a>
             <a href="https://zerodumb.github.io" class="text-gray-300 hover:text-terminal-green" target="_blank" rel="noopener noreferrer">Scripts & Tools</a>
             <a href="/rss.xml" class="text-gray-300 hover:text-terminal-green" title="RSS Feed">RSS</a>
           </div>
@@ -94,9 +108,12 @@ const posts = await getCollection('blog');
         </div>
         <script src="https://keeper.zerodumb.dev/js/form_embed.js"></script>
             
-        <p class="mt-12 mb-20 text-gray-600">
+        <p class="mt-12 pb-6 text-gray-500">
           Built by Zero. Contact: <a href="mailto:zero@zerodumb.dev" class="underline hover:text-white">zero@zerodumb.dev</a> | 
           Checkout some of my other <a href="https://zerodumb.github.io/" class="underline hover:text-white" target="_blank" rel="noopener noreferrer">scripts, tools, & projects</a>
+          <a href="https://buymeacoffee.com/iamnotaskid" target="_blank" rel="noopener noreferrer" class="text-sm text-gray-500 hover:text-white">
+            💀 Buy Me Caffeine
+          </a>          
         </p>
     
       </div>

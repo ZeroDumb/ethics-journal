@@ -23,6 +23,10 @@ See [ethics.md](ethics.astro) for my personal hacker manifesto and ethical princ
 - [Blog](https://zerodumb.dev)
 - [GitHub](https://github.com/ZeroDumb)
 
+☕ Found this useful? [Buy Me Caffeine](https://buymeacoffee.com/iamnotaskid)
+
+---
+
 ## 📜 License
 
 All content is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
