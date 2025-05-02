@@ -24,6 +24,30 @@ import Layout from '../layouts/Layout.astro';
         <li>Basic security recommendations</li>
       </ul>
 
+      <h2 class="text-terminal-green">🔍 Common Question</h2>
+      <p>
+        <strong>Q:</strong> “am I allowed to scan my own stuff?”
+        <br>
+        <strong>A:</strong>Yes. You absolutely are. You own the domain, the content, and you’re acting on your own behalf.<br>
+        It doesn't matter if it’s hosted on GitHub Pages, GoDaddy, or powered by a hamster on a wheel — if you control it, you're in the clear.
+      </p>
+      <h3 class="text-terminal-green">Here’s what counts as a green light:</h3>
+      <ul>
+        <li>You’re the domain owner (e.g. zerodumb.dev)</li>
+        <li>You control the GitHub repo</li>
+        <li>You’re scanning only public endpoints/content (no admin panels, no authenticated sessions)</li>
+        <li>You’re not hammering your host like a DDoS — we keep scans polite and staggered</li>
+      </ul>
+
+      <h3 class="text-terminal-green">In fact, it’s smart to recon your own site. You’ll find:</h3>
+      <ul>
+        <li>Overshared metadata (Git leaks, repo history)</li>
+        <li>Mistyped robots.txt that accidentally lists sensitive paths</li>
+        <li>Indexable files you didn’t mean to make public</li>
+        <li>Framework debug endpoints still open</li>
+      </ul>
+      <p>You’re basically being your own bug bounty hunter — minus the swag hoodie and million-dollar payout.</p>
+
       <h2 class="text-terminal-cyan"> How to Order</h2>
       <a href="mailto:zero@zerodumb.dev" class="inline-block mt-4 px-4 py-2 bg-green-700 hover:bg-green-500 text-white rounded">
         Request a Report
