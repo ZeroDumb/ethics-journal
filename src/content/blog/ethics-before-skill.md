@@ -64,6 +64,6 @@ But your **ethics** need intentional work, every day.
 **Talent is not what makes you dangerous.  
 Intent is.**
 
-Stay sharp. Stay grounded. Stay curious. Stay good.
+Stay sharp. Stay grounded. Stay curious. Stay loud.
 
 ---
