@@ -13,32 +13,48 @@ import Layout from '../layouts/Layout.astro';
       </div>
     </div>
     <div class="prose prose-invert max-w-none p-6">
-      <h1 class="text-terminal-green"> Ethical Surface Audit</h1>
+      <h1 class="text-terminal-green"> OSINT Surface Audit</h1>
+      <p>
+        You're launching cool things, but have you ever stopped to check what the internet knows about you? 
+        This is a simple recon scan for normal humans who want to stay out of breach headlines.
+      </p>      
       <p>
         Think of this as a digital pat-down for your public presence. No deep-dives, no red-team ninjas dropping from ceiling tiles. Just a surface recon audit to help you not look like an unpatched WordPress install from 2013.
       </p>
 
       <h2 class="text-terminal-cyan"> What You Get</h2>
       <ul>
-        <li>Quick recon of public assets (domain, GitHub, public DNS, etc.)</li>
-        <li>Metadata scan (emails, IPs, stray API keys if they're out there)</li>
-        <li>Basic subdomain enumeration (no active fuzzing)</li>
-        <li>Credential leak check via public breach APIs</li>
-        <li>PDF report with notes, tips, and maybe a meme</li>
+        <li>Public email + metadata scan (DNS, WHOIS, common leaks)</li>
+        <li>Subdomain visibility check (no active fuzzing, just passive recon)</li>
+        <li>Credential exposure review (HIBP, Dehashed, public breach APIs)</li>
+        <li>Open-source footprint review (GitHub, pastebins, indexable docs)</li>
+        <li>API key or config file checks (if anything’s hanging out in the breeze)</li>
+        <li>Quick passive recon of all linked assets (domains, repos, social, etc.)</li>
+        <li>Clean PDF report with takeaways, red flags, and maybe a meme</li>
       </ul>
 
       <h2 class="text-terminal-cyan"> Pricing</h2>
-      <p><strong>$100 flat</strong> for solo devs / <strong>$1,000</strong> for startups with actual funding and hubris to match.</p>
+      <p><strong>$100 flat</strong> for solo devs / <strong>$1,000+</strong> for startups with actual funding.</p>
       <p>I'm not a big fan of the "I'm a startup" discount, but I'm open to it if you're willing to pay more.</p>
       <p>If you require a more comprehensive audit, please reach out to me at zero@zerodumb.dev.</p>
 
-      <h2 class="text-terminal-cyan"> Request an Audit</h2>
+      <h2 class="text-terminal-cyan"> How to Order</h2>
+      <a href="mailto:zero@zerodumb.dev" class="inline-block mt-4 px-4 py-2 bg-green-700 hover:bg-green-500 text-white rounded">
+        Request a Report
+      </a>
+      <p>Your request MUST include:</p>
+      <ul>
+        <li>Your name (or alias, no judgment)</li>
+        <li>Your main domain or project URL</li>
+        <li>Your email address that matches the domain (I will check, and I don’t do work for gmail, hotmail, or your mom’s mail, etc.)</li>
+        <li>A sentence saying "Yes, I give permission for surface-level recon"</li>
+      </ul>
       <p>
-        Shoot a request to <a href="mailto:zero@zerodumb.dev" class="text-terminal-cyan hover:underline">zero@zerodumb.dev</a>. Include your domain, public GitHub, or whatever asset you want eyes on. 
+        I'll get back to you with a report, and suggestions for next steps. If it is determined that you are not the site owner, you will not be refunded, and you will not receive a report.
       </p>
 
-      <p class="mt-8 text-sm text-gray-500">
-        ☕ Like the idea? <a href="https://buymeacoffee.com/iamnotaskid" target="_blank" rel="noopener noreferrer" class="underline">Buy Me Caffeine &#8599;</a>
+      <p class="text-terminal-green mt-6 animate-pulse">
+        <span class="text-gray-500">$</span> echo "Request sent to Zero." > osint-lite.log
       </p>
     </div>
   </div>

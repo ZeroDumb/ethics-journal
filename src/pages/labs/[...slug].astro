@@ -1,0 +1,24 @@
+---
+import { getCollection } from 'astro:content';
+import LabsLayout from '../../layouts/labs.astro';
+
+export async function getStaticPaths() {
+  const labs = await getCollection('labs' as any);
+  return labs.map((lab: any) => ({
+    params: { slug: lab.slug },
+    props: { lab },
+  }));
+}
+
+const { lab } = Astro.props;
+const { Content } = await lab.render();
+---
+
+<LabsLayout 
+  title={lab.data.title}
+  pubDate={lab.data.pubDate}
+  description={lab.data.description}
+  categories={lab.data.categories}
+>
+  <Content />
+</LabsLayout>

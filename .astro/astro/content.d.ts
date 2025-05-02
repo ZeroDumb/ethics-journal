@@ -179,13 +179,6 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
-"lab-notes-week-1.md": {
-	id: "lab-notes-week-1.md";
-  slug: "lab-notes-week-1";
-  body: string;
-  collection: "blog";
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".md"] };
 "red-flag-clients.md": {
 	id: "red-flag-clients.md";
   slug: "red-flag-clients";
@@ -199,6 +192,22 @@ declare module 'astro:content' {
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+};
+"labs": {
+"lab-notes-week-1.md": {
+	id: "lab-notes-week-1.md";
+  slug: "lab-notes-week-1";
+  body: string;
+  collection: "labs";
+  data: InferEntrySchema<"labs">
+} & { render(): Render[".md"] };
+"sample-lab.md": {
+	id: "sample-lab.md";
+  slug: "sample-lab";
+  body: string;
+  collection: "labs";
+  data: InferEntrySchema<"labs">
 } & { render(): Render[".md"] };
 };
 "tools": {

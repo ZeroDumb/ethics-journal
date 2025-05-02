@@ -1,0 +1,100 @@
+---
+import Layout from './Layout.astro';
+import { format } from 'date-fns';
+import readingTime from 'reading-time';
+import TableOfContents from '../components/TableOfContents.tsx';
+import RelatedPosts from '../components/RelatedPosts.astro';
+import MatrixRain from '../components/MatrixRain.tsx';
+
+interface Props {
+  title: string;
+  pubDate: Date;
+  description?: string;
+  categories?: string[];
+}
+
+const { title, pubDate, description, categories = [] } = Astro.props;
+const content = await Astro.slots.render('default');
+const stats = readingTime(content);
+
+// Ensure pubDate is a valid Date object
+const formattedDate = pubDate instanceof Date && !isNaN(pubDate.getTime()) 
+  ? format(pubDate, 'MMMM d, yyyy')
+  : 'Date not available';
+---
+
+<Layout title={title} description={description}>
+  <MatrixRain client:only="react" />
+  <div class="relative">
+    <TableOfContents client:load />
+    <article class="prose prose-lg max-w-none">
+      <div class="terminal-container bg-gray-900 rounded-lg border border-gray-700 overflow-hidden mb-4 sm:mb-8">
+        <div class="terminal-header bg-gray-800 px-3 sm:px-4 py-2 flex justify-between items-center">
+          <span class="text-gray-300 font-mono text-sm sm:text-base">zerodumb@ethics-journal:~/labs$</span>
+          <div class="flex space-x-2">
+            <span class="w-2 h-2 sm:w-3 sm:h-3 rounded-full bg-red-500"></span>
+            <span class="w-2 h-2 sm:w-3 sm:h-3 rounded-full bg-yellow-500"></span>
+            <span class="w-2 h-2 sm:w-3 sm:h-3 rounded-full bg-green-500"></span>
+          </div>
+        </div>
+        <div class="p-4 sm:p-6">
+          <h1 class="text-terminal-green text-2xl sm:text-3xl font-bold mb-3 sm:mb-4">{title}</h1>
+          <div class="flex flex-wrap items-center gap-2 sm:gap-4 text-xs sm:text-sm mb-4 sm:mb-6">
+            <time class="text-gray-400">{formattedDate}</time>
+            <span class="text-gray-400">·</span>
+            <span class="text-gray-400">{Math.ceil(stats.minutes)} min read</span>
+            {categories.length > 0 && (
+              <div class="flex flex-wrap gap-2">
+                {categories.map(category => (
+                  <span class="bg-gray-800 text-terminal-cyan px-2 py-1 rounded text-xs sm:text-sm">{category}</span>
+                ))}
+              </div>
+            )}
+          </div>
+          <div class="prose prose-invert prose-sm sm:prose-base">
+            <slot />
+          </div>
+        </div>
+      </div>
+      <RelatedPosts currentSlug={Astro.params.slug || ''} categories={categories} />
+    </article>
+  </div>
+</Layout>
+
+<script>
+  // Add copy button to code blocks
+  document.querySelectorAll('pre').forEach(pre => {
+    const button = document.createElement('button');
+    button.className = 'absolute top-2 right-2 px-2 py-1 text-xs bg-gray-700 text-gray-300 rounded hover:bg-gray-600';
+    button.textContent = 'Copy';
+    button.addEventListener('click', () => {
+      navigator.clipboard.writeText(pre.textContent || '');
+      button.textContent = 'Copied!';
+      setTimeout(() => {
+        button.textContent = 'Copy';
+      }, 2000);
+    });
+    pre.style.position = 'relative';
+    pre.appendChild(button);
+  });
+
+  // Keyboard shortcuts
+  document.addEventListener('keydown', (e) => {
+    if (e.ctrlKey || e.metaKey) {
+      switch(e.key) {
+        case 'k':
+          e.preventDefault();
+          (document.querySelector('#search') as HTMLElement)?.focus();
+          break;
+        case 'h':
+          e.preventDefault();
+          window.location.href = '/';
+          break;
+        case 'l':
+          e.preventDefault();
+          window.location.href = '/labs';
+          break;
+      }
+    }
+  });
+</script> 

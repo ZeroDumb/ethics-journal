@@ -1,0 +1,58 @@
+---
+// src/pages/automation-audit.astro
+import Layout from '../layouts/Layout.astro';
+---
+<Layout title="Automation Audit" description="Break your stack before it breaks you.">
+  <div class="terminal-container rounded-lg border border-gray-700 overflow-hidden">
+    <div class="terminal-header bg-gray-800 px-4 py-2 flex justify-between items-center">
+      <span class="text-gray-300 font-mono">zerodumb@ethics-journal:~/automations$</span>
+      <div class="flex space-x-2">
+        <span class="w-3 h-3 rounded-full bg-red-500"></span>
+        <span class="w-3 h-3 rounded-full bg-yellow-500"></span>
+        <span class="w-3 h-3 rounded-full bg-green-500"></span>
+      </div>
+    </div>
+    <div class="prose prose-invert max-w-none p-6">
+      <h1 class="text-terminal-green">Automation Stack Review</h1>
+      <p>
+        You built a monster. Now let's make sure it doesn't implode.
+      </p>
+
+      <h2 class="text-terminal-cyan">What You'll Get</h2>
+      <ul>
+        <li>Flow check across Zapier, Make, Airtable, GHL, etc.</li>
+        <li>Webhook, token, and credential storage sanity check</li>
+        <li>Basic AI agent output sanity scan (hallucinations, loops, misfires)</li>
+        <li>Security overview: where your automations leak data (and why)</li>
+        <li>Resilience review (fail points, redundancy, error handling)</li>
+        <li>Simple PDF report with fixes and architecture notes</li>
+      </ul>
+
+      <h2 class="text-terminal-cyan">Pricing</h2>
+      <p>
+        <strong>$75 flat</strong> if your setup doesn't look like a flowchart drawn in the dark.<br />
+        <strong>$150+</strong> if you have 12 Zaps triggering a Notion table that controls your toaster.
+      </p>
+      <p>
+        For larger requests: Discovery calls start at $250 an hour, and I'll need a few more details.
+      </p>
+
+      <h2 class="text-terminal-cyan">Interested?</h2>
+      <a href="mailto:zero@zerodumb.dev" class="inline-block mt-4 px-4 py-2 bg-green-700 hover:bg-green-500 text-white rounded">
+        Request an Audit
+      </a>
+      <p>Your request MUST include:</p>
+      <ul>
+        <li>A quick summary of your stack (platforms + tools used)</li>
+        <li>Your permission to poke around logs, flows, etc.</li>
+        <li>The thing that keeps breaking (or your fear of it breaking)</li>
+      </ul>
+
+      <p class="mt-6">Let's make your robot army slightly less self-destructive.</p>
+
+      <p class="text-terminal-green mt-6 animate-pulse">
+        <span class="text-gray-500">$</span> echo "Automation audit request received." > logs/zerodumb.txt
+      </p>
+    </div>
+  </div>
+</Layout>
