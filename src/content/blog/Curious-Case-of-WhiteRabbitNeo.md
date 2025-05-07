@@ -7,6 +7,8 @@ categories: ["tools", "osint", "ai"]
 ## What Is WhiteRabbitNeo (WRN)?
 - Is it an LLM frontend? A cyber detective dashboard? A rabbit with Wi-Fi? (All three?)
 
+![WhiteRabbitNeo-1](https://github.com/user-attachments/assets/7470acc1-2900-46f0-9434-ce4d4724c8c5)
+
 WhiteRabbitNeo (or WRN if you're into cyberpunk acronyms) is a natural language-driven OSINT assistant designed for recon, enumeration, and digital footprint analysis — minus the command-line headache. Imagine ChatGPT, but it reads `nmap` output for fun and has a side hustle in metadata exposure.
 
 At its core, WRN aims to answer your recon questions using plain English. It takes high-level prompts like:
