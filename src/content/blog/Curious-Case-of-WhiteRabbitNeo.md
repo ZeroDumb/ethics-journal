@@ -141,13 +141,13 @@ Response direct from WRN:
 
 > For example, if you create a variable in one tab and then switch to another tab, the variable you created in the first tab will not be accessible in the second tab. Similarly, if you modify a variable in one tab, the modification will not be reflected in the other tabs unless you explicitly save or share the modified data.
 
-### Self-Hosted (via HuggingFace/GitHub)
+### Self-Hosted (via HuggingFace)
 
 * ✅ Private, modifiable, local  
 * ✅ Discoverable, downloadable directly through LM Studio
 * ✅ Add your own tools or enhance pipelines  
 * ❌ Requires Docker or local Python setup, if you really want to open it up, and compile it all yourself
-* ❌ Not for you if `chmod` gives you trauma, again, you can just run it in LMS if you are a nervous kitty, it works great honestly. I recommend the 13B q4 from HuggingFace, TheBloke. feel free to run a bigger badder model if your local machine allows it. 
+* ❌ Not for you if `chmod` gives you trauma, again, you can just run it in LMS if you are a nervous kitty, it works great honestly. I recommend the 13B q4 from HuggingFace. Feel free to run a bigger badder model if your local machine allows it, or a smaller model if not. 
 
 ---
 
