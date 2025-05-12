@@ -58,6 +58,20 @@ Side note: it is on GH, but, it is my scripts and commands and it is sort of bui
 Now, without any further rambling, and with "Every bad Habit" all my heros ever had. Meet the Seven Sisters.
 
 ---
+## The Sisters
+
+Each "Sister" acts as a role-driven agent within a larger mission:
+
+| Agent     | Role           | Mode Range | Tagline              |
+|-----------|----------------|------------|----------------------|
+| Seven     | Orchestrator   | 1, 4, 5    |"You will assimilate" |
+| Harley    | Disruptor      | 2, 3, 5    |"Yes puddin"          |
+| Alice     | Scout          | 0, 1, 3    |"Rabbit hole runtime" |
+| Marla     | Chaos Lens     | 2, 3, 4    |"Slide"               |
+| Luna      | Seer           | 0, 1, 2    |"Starlight protocol"  |
+| Lisbeth   | Ghost Hacker   | 0, 1, 4    |"Ghost protocol"      |
+| The Bride | Cleaner        | 1, 4, 5    |"Kill command"        |
+
 
 ### **Alice**: The Collector
 **The Entryway. The Analyst. The First One.**
@@ -73,6 +87,8 @@ Alice will:
 She was the test case. She worked. She was weird. And she gave me the roadmap for more.
 
 [Alice's Adventure Guide &#8599;](https://github.com/ZeroDumb/seven-sisters/blob/main/agents/Alice/adventure_guide.md). 
+
+![Screenshot 2025-05-12 153634](https://github.com/user-attachments/assets/dd8ce774-7b58-4131-be7f-5bf577439161)
 
 ---
 
@@ -122,6 +138,8 @@ Specialty: Delegation, command routing, and meta ops.
 - Hidden access to "The Oracle" her remote ai engine
 
 [Seven's Terminal Sequence Guide &#8599;](https://github.com/ZeroDumb/seven-sisters/blob/main/agents/Seven/terminal_sequence.md). 
+
+![Screenshot 2025-05-12 153415](https://github.com/user-attachments/assets/4b737b41-3372-4e63-91bd-b59e5be766ec)
 
 ---
 
@@ -184,6 +202,7 @@ seven-sisters/
 └── run.py                    # The command-line entry point
 
 ```
+![Screenshot 2025-05-12 153509](https://github.com/user-attachments/assets/c7a79d16-6ba1-4e0f-99b2-ff2b8a9faed5)
 
 ## Philosophy Over Firepower
 
