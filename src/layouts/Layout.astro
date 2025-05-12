@@ -5,6 +5,7 @@ import { getCollection } from 'astro:content';
 interface Props {
   title: string;
   description?: string;
+  ogImage?: string;
 }
 
 const { title, description = "ZeroDumb Ethics Journal - Ethical hacking reflections, recon lab notes, and the hacker's compass." } = Astro.props;
@@ -30,14 +31,14 @@ const posts = await getCollection('blog');
     <meta property="og:url" content="https://zerodumb.dev" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:image" content="https://zerodumb.dev/images/og-image.jpg" />
+    <meta property="og:image" content={`https://zerodumb.dev${Astro.props.ogImage || '/images/og-image.jpg'}`} />
   
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:url" content="https://zerodumb.dev" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
-    <meta name="twitter:image" content="https://zerodumb.dev/images/og-image.jpg" />
+    <meta name="twitter:image" content={`https://zerodumb.dev${Astro.props.ogImage || '/images/og-image.jpg'}`} />
     <meta name="twitter:creator" content="@zerodumb_dev" />
   
     <!-- Fonts -->

@@ -1,0 +1,29 @@
+---
+import { getCollection, type CollectionEntry } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+
+export async function getStaticPaths() {
+  const sisters = await getCollection('7-sisters');
+  return sisters.map(sister => ({
+    params: { slug: sister.slug },
+    props: { sister },
+  }));
+}
+
+interface Props {
+  sister: CollectionEntry<'7-sisters'>;
+}
+
+const { sister } = Astro.props;
+const { Content } = await sister.render();
+---
+
+<Layout 
+  title={sister.data.title}
+  description={sister.data.description}
+  ogImage={sister.data.ogImage}
+>
+  <article class="prose prose-invert max-w-none">
+    <Content />
+  </article>
+</Layout>

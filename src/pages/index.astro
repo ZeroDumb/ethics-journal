@@ -6,9 +6,11 @@ import MatrixRain from '../components/MatrixRain.tsx';
 const posts = await getCollection('blog');
 const tools = await getCollection('tools');
 const labs = await getCollection('labs');
+const sevenSisters = await getCollection('7-sisters');
 posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 tools.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 labs.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+sevenSisters.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 ---
 
 <Layout title="ZeroDumb Ethics Journal">
@@ -42,6 +44,17 @@ labs.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
         <p>total {tools.length}</p>
         {tools.map(tool => (
           <p>-rw-r--r-- 1 zero zero 4096 {tool.data.pubDate.toLocaleDateString('en-US')} <a href={`/tools/${tool.slug}`} class="text-terminal-cyan hover:underline">{tool.slug}.md</a></p>
+        ))}
+      </div>
+
+      <!-- 7-sisters folder -->
+      <p class="text-terminal-green mb-4 mt-6">
+        <span class="text-gray-500">$</span> ls -l 7-sisters/mischief_managed/
+      </p>
+      <div class="text-gray-300 space-y-2">
+        <p>total {sevenSisters.length}</p>
+        {sevenSisters.map(sister => (
+          <p>-rw-r--r-- 1 zero zero 4096 {sister.data.pubDate.toLocaleDateString('en-US')} <a href={`/7-sisters/${sister.slug}`} class="text-terminal-cyan hover:underline">{sister.slug}.md</a></p>
         ))}
       </div>
 
