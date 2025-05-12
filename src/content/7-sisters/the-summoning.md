@@ -12,11 +12,15 @@ ogImage: "/images/seven-sisters.png"
 Like all great mistakes and discoveries, this project began with a caffeine high, a rabbit hole, and a casual, offhand comment to my AI:  
 > _What if I could summon specific tools like characters?_
 
+![seven-sisters](https://github.com/user-attachments/assets/ffc7ee49-0f00-482f-8567-9174ab402246)
+
 That was it. That was the moment. Like a _"Gothic Ballroom"_ The birth of **The Seven Sisters** — modular, character-driven Python agents designed for recon, OSINT, and experimental tooling, dry runs and red team insurrections. They aren’t just scripts. They’re personas. They talk back, I mean if you like Missio's "Middle Fingers" lol. They each have a purpose. They operate under constraints (I think), levels, and safe mode logic (mostly). Because honestly, if your tools don’t sass you a little, are you even doing it right? This is my introduction to the Sisters, part bio, part playlist of mayhem. Call it my "Basket Case". 
 
 Like a cursed bash script full of childhood memories, and adult(ish) reasoning... Look, I am not pretending that this tool is at all the most efficient, in fact, it's probably somewhere between a suit and cosplay, a touch of outlaw, a dash of practical magic, a crooked potter spell, and the sarcastic whimsy of a caffeinated gerbil. 
 
 Now, me, your curator of sorts. Just some random who really wanted to learn offensive cybersecurity. A few issues though, I have the attention span of an audiophile with too many movie references. I learn in parables and broken examples. Sort of like the bartender from Boondock saints, with twisted references and half spoken, accent splashed proverbs. **you know the type, always something to compare everything to.** I see music in blasting colors and floating shapes, break math problems into chunks and never use the scratch paper. Every name I remember is attached to a face, and a movie quote for nearly every moment in life like Christine with songs, but, probably worse. 
+
+![Screenshot 2025-05-12 131217](https://github.com/user-attachments/assets/d8818d5c-a43f-48d9-b9eb-1909e31ebf2b)
 
 So, what is the 7-sisters project for me? It's a loser anthem, a misfit’s dress rehearsal, a nonsensical banter shell, and a summoning script that lets me be the Drum Major in a cyberpunk parade of satire and recon tools. Sort of like if Dropkick Murphey met up with Social D, handed Harley a sledgehammer, and somehow ended up on a borg ship with Seven and chased a rabbit with Alice. I don't know really, let's call it my persona movie script or the book series that never got published. 
 
@@ -43,6 +47,8 @@ Each sister:
 - Can be put into **safe mode** to avoid doing dumb or noisy stuff, except Harley, don't trust her at all. (insert evil laugh here)
 
 You don’t run the script. You **summon** the Sister's. And they come marching in, opening individual terminal shells, and scanning for your existing tool libraries like Merle Haggard singing Mama Tried and Johnny waltzing into Folsom. I strongly encourage you actually read the README before you install anything. Don't worry, it's all linked at the end somewhere. Assuming I don't forget and Luna didn't lose it. 
+
+![Screenshot 2025-05-12 143216](https://github.com/user-attachments/assets/03508a5f-a67b-4522-9163-c9c4d85ead30)
 
 Side note: it is on GH, but, it is my scripts and commands and it is sort of built to work on my machine, so don't mind all the randomly hard coded directory references. I am sure that if you trully want to meet the sisters you'll figure it out, or Harley will just laugh at you and Lisbeth with ghost you. 
 
@@ -161,6 +167,8 @@ I built and continue building this as a tool, an educational piece, and as a way
 
 So, me and the "Seven Spanish Angels" will "Check Yes. Juliet" and I will keep learning and coding until maybe, just maybe, another person or persona, enters the chat. 
 
+![Screenshot 2025-05-12 131641](https://github.com/user-attachments/assets/2b3a150d-38dc-4993-beae-af3e9b228109)
+
 ---
 
 Each sister runs independently or as part of a mission stack. You summon them individually or let Seven coordinate a full sweep. Every log, tool, and action is wrapped in commentary and code discipline.
@@ -175,9 +183,11 @@ The Seven Sisters are a joke. A project. A framework. A friend group.
 They’re a toolbox wrapped in lore. They’re how I learn faster.  
 And hopefully, they’ll become something useful to someone who needs tools with a soul — or at least a decent voice line.
 
+
 If you want to watch the progress, offer suggestions, fork and currupt your own version, you’ll find the 7-Sisters [on GitHub &#8599;](https://github.com/ZeroDumb/seven-sisters).  
 If you summon Luna, be kind. She remembers things.
 
 — Zero
 
+![Untitled (100 x 100 px)](https://github.com/user-attachments/assets/c1923463-55b4-4538-9183-e220b6d31bc7)
 
