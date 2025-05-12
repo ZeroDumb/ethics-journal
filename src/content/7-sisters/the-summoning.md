@@ -73,6 +73,8 @@ Each "Sister" acts as a role-driven agent within a larger mission:
 | The Bride | Cleaner        | 1, 4, 5    |"Kill command"        |
 
 ![Untitled video (1)](https://github.com/user-attachments/assets/3e66dc79-3601-430a-9704-37ae991f5624)
+A brief glimpse into the summoning. No AI was harmed (yet).
+
 
 ### **Alice**: The Collector
 **The Entryway. The Analyst. The First One.**
