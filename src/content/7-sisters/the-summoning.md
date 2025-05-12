@@ -72,6 +72,7 @@ Each "Sister" acts as a role-driven agent within a larger mission:
 | Lisbeth   | Ghost Hacker   | 0, 1, 4    |"Ghost protocol"      |
 | The Bride | Cleaner        | 1, 4, 5    |"Kill command"        |
 
+![Untitled video (1)](https://github.com/user-attachments/assets/3e66dc79-3601-430a-9704-37ae991f5624)
 
 ### **Alice**: The Collector
 **The Entryway. The Analyst. The First One.**
