@@ -35,6 +35,7 @@ I wanted a structure that let me:
 - Run specific tools based on context
 - Limit execution power depending on my experience (or stupidity) level
 - Inject personality, commentary, and charm into otherwise dry workflows
+- Introduce AI reasoning, report compilation, logic, and attitude 
 - Create a modular framework for ethical recon that wouldn’t spiral into garbage
 
 And so, the “Sisters” were formed — each one themed, permission-bound, and semi-sentient (in spirit only).
@@ -179,13 +180,15 @@ Each sister runs independently or as part of a mission stack. You summon them in
 
 ## Final Thoughts
 
-The Seven Sisters are a joke. A project. A framework. A friend group.  
+The Seven Sisters are a joke. A project. A framework. A friend group. A teaching tool. A work in progress. 
 They’re a toolbox wrapped in lore. They’re how I learn faster.  
 And hopefully, they’ll become something useful to someone who needs tools with a soul — or at least a decent voice line.
 
 
 If you want to watch the progress, offer suggestions, fork and currupt your own version, you’ll find the 7-Sisters [on GitHub &#8599;](https://github.com/ZeroDumb/seven-sisters).  
 If you summon Luna, be kind. She remembers things.
+
+oos resistance is futile
 
 — Zero
 
