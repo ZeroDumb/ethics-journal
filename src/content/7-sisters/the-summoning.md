@@ -150,6 +150,41 @@ Specialty: Custom payloads, final probes, and hard truths.
 
 ---
 
+### Project Structure
+```
+seven-sisters/
+├── agents/
+│   ├── seven.py              # The Orchestrator logic
+│   ├── harley.py             # Disruption agent
+│   ├── alice.py              # Recon + curiosity agent
+│   ├── marla.py              # Emotional chaos
+│   ├── luna.py               # Abstract/dreamy insight
+│   ├── lisbeth.py            # Hacker ghost
+│   └── the_bride.py          # Final execution agent
+│
+├── core/
+│   ├── cli.py                # Handles input/output and styling
+│   ├── dispatcher.py         # Routes commands to proper agent
+│   └── logger.py             # Tracks activity, logs, and run context
+│
+├── config/
+│   ├── agents.yaml           # Personalities, modes, trigger phrases
+│   ├── environment.yaml      # API keys, paths, system config
+│   └── tools.yaml            # Recon tools, args, and behaviors
+│
+├── scripts/
+│   ├── recon.sh              # Bash/Python hybrid tool runners
+│   ├── cleanup.sh            # Log scrubs or reset scripts
+│   └── demo_mode.py          # For showcasing preset scenario chains
+│
+├── tests/                    # Unit tests per module
+│
+├── README.md
+├── implementation_plan.md
+└── run.py                    # The command-line entry point
+
+```
+
 ## Philosophy Over Firepower
 
 This isn’t about building a botnet or automating some edgy recon suite that gets you in trouble. This is about ethical exploration, scoped learning, and tools with **training wheels**. Each sister is constrained intentionally:
@@ -175,6 +210,18 @@ So, me and the "Seven Spanish Angels" will "Check Yes. Juliet" and I will keep l
 Each sister runs independently or as part of a mission stack. You summon them individually or let Seven coordinate a full sweep. Every log, tool, and action is wrapped in commentary and code discipline.
 
 *Yes, it’s a recon framework. But it has a soul. Seven of them, actually. * Even if it is Cash's "Hurt", yes Cash, not NIN. 
+
+---
+
+<details><summary> How to Actually Run This Thing</summary>
+
+- Clone the repo
+- Run `python main.py`
+- Don’t break stuff
+
+</details>
+
+> ⚠️ Harley is chaos. She's loud. She doesn’t care about scope. Use with caution.
 
 ---
 
