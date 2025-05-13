@@ -5,6 +5,7 @@ import readingTime from 'reading-time';
 import TableOfContents from '../components/TableOfContents.tsx';
 import RelatedPosts from '../components/RelatedPosts.astro';
 import MatrixRain from '../components/MatrixRain.tsx';
+import PostReactions from '../components/PostReactions';
 
 interface Props {
   title: string;
@@ -49,6 +50,7 @@ const stats = readingTime(content);
           <div class="prose prose-invert prose-sm sm:prose-base">
             <slot />
           </div>
+          <PostReactions client:load postId={Astro.params.slug || ''} />
         </div>
       </div>
       <RelatedPosts currentSlug={Astro.params.slug || ''} categories={categories} />

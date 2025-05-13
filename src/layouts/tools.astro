@@ -5,15 +5,17 @@ import readingTime from 'reading-time';
 import TableOfContents from '../components/TableOfContents.tsx';
 import RelatedPosts from '../components/RelatedPosts.astro';
 import MatrixRain from '../components/MatrixRain.tsx';
+import PostReactions from '../components/PostReactions';
 
 interface Props {
   title: string;
   pubDate: Date;
   description?: string;
   categories?: string[];
+  slug: string;
 }
 
-const { title, pubDate, description, categories = [] } = Astro.props;
+const { title, pubDate, description, categories = [], slug } = Astro.props;
 const content = await Astro.slots.render('default');
 const stats = readingTime(content);
 
@@ -54,9 +56,10 @@ const formattedDate = pubDate instanceof Date && !isNaN(pubDate.getTime())
           <div class="prose prose-invert prose-sm sm:prose-base">
             <slot />
           </div>
+          <PostReactions client:load postId={slug} />
         </div>
       </div>
-      <RelatedPosts currentSlug={Astro.params.slug || ''} categories={categories} />
+      <RelatedPosts currentSlug={slug} categories={categories} />
     </article>
   </div>
 </Layout>
