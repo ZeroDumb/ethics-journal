@@ -10,7 +10,7 @@ categories: ["education", "hid", "automation", "microcontrollers", "cybersecurit
 
 Picture this: You're sitting in your cybersecurity lab, staring at a pile of rubber duckies that cost more than your lunch budget, and you think to yourself: *"There has to be a better way to teach people about HID emulation without breaking the bank or their sanity."*
 
-Enter **Happy Frog** — the educational mayhem engine that's part cybersecurity tool, part learning platform, and entirely too much fun for its own good.
+Enter [**Happy Frog**](https://github.com/ZeroDumb/happy-frog) — the educational mayhem engine that's part cybersecurity tool, part learning platform, and entirely too much fun for its own good.
 
 Think of it as the lovechild of a USB Rubber Ducky and a Python script that went to therapy and came out with better coping mechanisms. It's HID emulation for the modern age, where everything is open source, educational, and just sarcastic enough to keep you engaged.
 
@@ -38,7 +38,7 @@ So, like any reasonable person with too much time and caffeine, I decided to bui
 
 ## What Makes Happy Frog Different?
 
-### 🎓 **Educational First**
+###  **Educational First**
 Unlike other HID emulation tools that treat you like you should already know everything, Happy Frog assumes you're here to learn. Every script, every command, every example is designed to teach you something.
 
 **Example:**
@@ -54,13 +54,13 @@ ENTER
 LOG Command prompt opened successfully
 ```
 
-### 🔧 **Open Source Everything**
+###  **Open Source Everything**
 No black boxes. No mysterious binaries. No "trust us, it's safe" nonsense. Every line of code is visible, readable, and educational. If you want to know how something works, you can actually look at it.
 
-### 💰 **Budget-Friendly**
+###  **Budget-Friendly**
 While some HID emulation tools require hardware that costs more than a used car, Happy Frog works with microcontrollers that cost less than a coffee. The Seeed Xiao RP2040? $5-8. Your dignity? Priceless.
 
-### 🎭 **Personality-Driven**
+###  **Personality-Driven**
 This isn't some sterile corporate tool. It's got character, it's got attitude, and it's not afraid to tell you when you're being an idiot. Because sometimes you need a friend who's willing to call you out on your nonsense.
 
 ---
@@ -220,7 +220,7 @@ Happy Frog is built in Python and provides:
 
 ## Real-World Applications
 
-### 🎓 **Educational Use Cases**
+###  **Educational Use Cases**
 
 #### **Cybersecurity Labs**
 - **HID Attack Demonstrations**: Show how physical access can lead to system compromise
@@ -234,7 +234,7 @@ Happy Frog is built in Python and provides:
 - **System Integration**: Show how software and hardware work together
 - **Debugging Skills**: Practice troubleshooting and problem-solving
 
-### 🔧 **Professional Applications**
+###  **Professional Applications**
 
 #### **System Administration**
 - **Automated Setup**: Script system configuration tasks
@@ -248,7 +248,7 @@ Happy Frog is built in Python and provides:
 - **Tool Development**: Build custom automation tools
 - **Vulnerability Assessment**: Test physical security controls
 
-### 🎨 **Creative Applications**
+###  **Creative Applications**
 
 #### **Art and Performance**
 - **Interactive Installations**: Create art that responds to physical input
@@ -350,7 +350,7 @@ happy-frog encode my_script.txt --verbose
 
 ## Safety and Ethics
 
-### 🛡️ **The Safety Framework**
+###  **The Safety Framework**
 
 Happy Frog is designed for education and authorized testing. Here's how to use it responsibly:
 
@@ -371,15 +371,6 @@ Happy Frog is designed for education and authorized testing. Here's how to use i
 - **Document Everything**: Keep records of what you're testing
 - **Monitor Execution**: Watch for unexpected behavior
 - **Clean Up**: Remove test files and restore systems after testing
-
-### 🚨 **Emergency Procedures**
-
-If something goes wrong:
-1. **Unplug the device immediately**
-2. **Force shutdown if necessary**
-3. **Disconnect from networks**
-4. **Use system restore if needed**
-5. **Don't panic** - most issues are recoverable
 
 ---
 
