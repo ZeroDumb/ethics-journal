@@ -1,0 +1,87 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+import MatrixRain from '../../components/MatrixRain.tsx';
+
+const frogs = await getCollection('happy-frog');
+frogs.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+---
+
+<Layout title="Happy Frog - ZeroDumb Ethics Journal">
+  <MatrixRain client:load />
+
+  <div class="terminal-container rounded-lg border border-gray-700 overflow-hidden">
+    <div class="terminal-header bg-gray-800 px-4 py-2 flex justify-between items-center">
+      <span class="text-gray-300 font-mono">zerodumb@ethics-journal:~/happy-frog$</span>
+      <div class="flex space-x-2">
+        <span class="w-3 h-3 rounded-full bg-red-500"></span>
+        <span class="w-3 h-3 rounded-full bg-yellow-500"></span>
+        <span class="w-3 h-3 rounded-full bg-green-500"></span>
+      </div>
+    </div>
+
+    <div class="terminal-body p-4 font-mono">
+      <p class="text-terminal-green mb-4">
+        <span class="text-gray-500">$</span> cat README.md
+      </p>
+
+      <div class="text-gray-300 mb-6">
+        <h1 class="text-terminal-green text-2xl font-bold mb-4">Happy Frog Collection</h1>
+        <p class="mb-4">
+          Welcome to the Happy Frog section. This collection contains posts about HID (Human Interface Device) projects, 
+          hardware hacking, and related security research.
+        </p>
+        <p class="text-sm text-gray-400">
+          Navigate with keyboard shortcuts: Ctrl+H (home), Ctrl+K (search), Ctrl+F (this page)
+        </p>
+      </div>
+
+      <p class="text-terminal-green mb-4 mt-6">
+        <span class="text-gray-500">$</span> ls -la
+      </p>
+      <div class="text-gray-300 space-y-2">
+        <p>total {frogs.length}</p>
+        {frogs.map(frogs => (
+          <div class="flex items-center justify-between">
+            <p>-rw-r--r-- 1 zero zero 4096 {frogs.data.pubDate.toLocaleDateString('en-US')} 
+              <a href={`/happy-frog/${frogs.slug}`} class="text-terminal-cyan hover:underline">{frogs.slug}.md</a>
+            </p>
+            <span class="text-gray-500 text-sm">{frogs.data.title}</span>
+          </div>
+        ))}
+      </div>
+
+      {frogs.length === 0 && (
+        <div class="text-gray-500 italic">
+          <p>No posts found in this collection yet.</p>
+        </div>
+      )}
+
+      <p class="text-terminal-green mt-6 animate-pulse">
+        <span class="text-gray-500">$</span> echo "Ready for some hardware hacking?"
+      </p>
+    </div>
+  </div>
+</Layout>
+
+<script>
+  // Keyboard shortcuts
+  document.addEventListener('keydown', (e) => {
+    if (e.ctrlKey || e.metaKey) {
+      switch(e.key) {
+        case 'k':
+          e.preventDefault();
+          (document.querySelector('#search') as HTMLElement)?.focus();
+          break;
+        case 'h':
+          e.preventDefault();
+          window.location.href = '/';
+          break;
+        case 'f':
+          e.preventDefault();
+          window.location.href = '/happy-frog';
+          break;
+      }
+    }
+  });
+</script> 

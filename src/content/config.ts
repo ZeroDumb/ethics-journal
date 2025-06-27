@@ -41,4 +41,20 @@ const sevenSisters = defineCollection({
   }),
 });
 
-export const collections = { blog, tools, labs, '7-sisters': sevenSisters };
+const happyFrog = defineCollection({
+  type: 'content',
+  schema: z.object({
+    title: z.string(),
+    description: z.string().optional(),
+    pubDate: z.date(),
+    categories: z.array(z.string()).optional(),
+  }),
+});
+
+export const collections = { 
+  blog, 
+  tools, 
+  labs, 
+  '7-sisters': sevenSisters,
+  'happy-frog': happyFrog
+};

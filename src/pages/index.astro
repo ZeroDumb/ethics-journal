@@ -2,15 +2,19 @@
 import Layout from '../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
 import MatrixRain from '../components/MatrixRain.tsx';
+import type { ContentEntryMap } from 'astro:content';
 
 const posts = await getCollection('blog');
 const tools = await getCollection('tools');
 const labs = await getCollection('labs');
 const sevenSisters = await getCollection('7-sisters');
+const happyFrog = await getCollection('happy-frog');
+
 posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 tools.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 labs.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 sevenSisters.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+happyFrog.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 ---
 
 <Layout title="ZeroDumb Ethics Journal">
@@ -36,6 +40,18 @@ sevenSisters.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
         Exploring the frontier of ethical hacking, recon, AI chaos, occasional dumpster fires, security adventures and digital responsibility. One post at a time.
       </div>
 
+      <!-- Store folder -->
+<!--      <p class="text-terminal-green mb-4 mt-6">
+        <span class="text-gray-500">$</span> ls -l Gadgets-Gizmos-Wheregoes-Whatreads-Thingamabobs/
+      </p>
+      <div class="prose prose-invert max-w-none">
+        <h2 class="text-terminal-green">Available Products</h2>
+        <p>Check out our collection of security tools and automation gadgets.</p>
+        <a href="/shop" class="inline-block mt-4 px-4 py-2 bg-green-700 hover:bg-green-500 text-white rounded">
+          Browse Products
+        </a>
+      </div> -->
+
       <!-- Tools folder -->
       <p class="text-terminal-green mb-4 mt-6">
         <span class="text-gray-500">$</span> ls -l tools/
@@ -55,6 +71,17 @@ sevenSisters.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
         <p>total {sevenSisters.length}</p>
         {sevenSisters.map(sister => (
           <p>-rw-r--r-- 1 zero zero 4096 {sister.data.pubDate.toLocaleDateString('en-US')} <a href={`/7-sisters/${sister.slug}`} class="text-terminal-cyan hover:underline">{sister.slug}.md</a></p>
+        ))}
+      </div>
+
+      <!-- happy-frog folder -->
+      <p class="text-terminal-green mb-4 mt-6">
+        <span class="text-gray-500">$</span> ls -l happy-frog/HID
+      </p>
+      <div class="text-gray-300 space-y-2">
+        <p>total {happyFrog.length}</p>
+        {happyFrog.map(frogs => (
+          <p>-rw-r--r-- 1 zero zero 4096 {frogs.data.pubDate.toLocaleDateString('en-US')} <a href={`/happy-frog/${frogs.slug}`} class="text-terminal-cyan hover:underline">{frogs.slug}.md</a></p>
         ))}
       </div>
 

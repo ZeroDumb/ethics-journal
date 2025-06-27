@@ -1,0 +1,25 @@
+---
+import { getCollection } from 'astro:content';
+import HappyFrogLayout from '../../layouts/happy-frog.astro';
+
+export async function getStaticPaths() {
+  const frogs = await getCollection('happy-frog');
+  return frogs.map(frog => ({
+    params: { slug: frog.slug },
+    props: { frog },
+  }));
+}
+
+const { frog } = Astro.props;
+const { Content } = await frog.render();
+---
+
+<HappyFrogLayout
+  title={frog.data.title}
+  pubDate={frog.data.pubDate}
+  description={frog.data.description}
+  categories={frog.data.categories}
+  slug={frog.slug}
+>
+  <Content />
+</HappyFrogLayout>

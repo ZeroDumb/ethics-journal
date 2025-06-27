@@ -167,6 +167,13 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"Happy-Frog.md": {
+	id: "Happy-Frog.md";
+  slug: "happy-frog";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "ai-in-bug-bounties.md": {
 	id: "ai-in-bug-bounties.md";
   slug: "ai-in-bug-bounties";
@@ -208,6 +215,36 @@ declare module 'astro:content' {
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+};
+"happy-frog": {
+"Access_and_Evasion.md": {
+	id: "Access_and_Evasion.md";
+  slug: "access_and_evasion";
+  body: string;
+  collection: "happy-frog";
+  data: InferEntrySchema<"happy-frog">
+} & { render(): Render[".md"] };
+"Rapid_Access.md": {
+	id: "Rapid_Access.md";
+  slug: "rapid_access";
+  body: string;
+  collection: "happy-frog";
+  data: InferEntrySchema<"happy-frog">
+} & { render(): Render[".md"] };
+"Session-Persistence.md": {
+	id: "Session-Persistence.md";
+  slug: "session-persistence";
+  body: string;
+  collection: "happy-frog";
+  data: InferEntrySchema<"happy-frog">
+} & { render(): Render[".md"] };
+"What_Even_is_HID.md": {
+	id: "What_Even_is_HID.md";
+  slug: "what_even_is_hid";
+  body: string;
+  collection: "happy-frog";
+  data: InferEntrySchema<"happy-frog">
 } & { render(): Render[".md"] };
 };
 "labs": {
