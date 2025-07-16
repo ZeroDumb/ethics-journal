@@ -96,6 +96,7 @@ Besides, Skynet was in movies 30 years ago, it's not like we haven't seen the en
 - Learn Python
 - Learn fundamentals of OffSec and Cybersecurity
 - Gain first invite-only access to a community
+- Learn something new every day
 - Make a difference
 
 Question loudly so others can learn quietly. Stay curious. Stay loud.
