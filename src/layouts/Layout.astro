@@ -8,7 +8,7 @@ interface Props {
   ogImage?: string;
 }
 
-const { title, description = "ZeroDumb Ethics Journal - Ethical hacking reflections, recon lab notes, and the hacker's compass." } = Astro.props;
+const { title, description = "ZeroDumb Hacking Journal - Ethical hacking reflections, AI tests, recon lab notes, the hacker's compass, and more." } = Astro.props;
 
 const posts = await getCollection('blog');
 ---
@@ -72,7 +72,7 @@ const posts = await getCollection('blog');
       <nav class="max-w-4xl mx-auto px-4 py-4">
         <div class="flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-0">
           <a href="/" class="text-lg sm:text-xl font-mono font-bold text-terminal-green hover:text-terminal-cyan">
-            ZeroDumb Ethics Journal
+            ZeroDumb Hacking Journal
           </a>
           <div class="flex flex-wrap justify-center gap-4 sm:gap-6 text-sm sm:text-base">
           <!--  <a href="/shop" class="text-gray-300 hover:text-terminal-green">Shop</a> -->

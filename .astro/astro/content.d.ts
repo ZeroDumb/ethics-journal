@@ -174,6 +174,13 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"Origin.md": {
+	id: "Origin.md";
+  slug: "origin";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "ai-in-bug-bounties.md": {
 	id: "ai-in-bug-bounties.md";
   slug: "ai-in-bug-bounties";
@@ -198,6 +205,13 @@ declare module 'astro:content' {
 "hacker-compass.md": {
 	id: "hacker-compass.md";
   slug: "hacker-compass";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"prompt-injection.md": {
+	id: "prompt-injection.md";
+  slug: "prompt-injection";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
