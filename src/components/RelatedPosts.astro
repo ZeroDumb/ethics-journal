@@ -4,15 +4,34 @@ import { getCollection } from 'astro:content';
 interface Props {
   currentSlug: string;
   categories: string[];
+  collection?: string;
 }
 
-const { currentSlug, categories } = Astro.props;
+const { currentSlug, categories, collection = 'blog' } = Astro.props;
 
-const posts = await getCollection('blog');
-const relatedPosts = posts
-  .filter(post => 
+// Get all collections
+const blogPosts = await getCollection('blog');
+const tools = await getCollection('tools');
+const labs = await getCollection('labs');
+const sevenSisters = await getCollection('7-sisters');
+const happyFrog = await getCollection('happy-frog');
+const helperNotes = await getCollection('helper-notes');
+
+// Combine all posts from all collections
+const allPosts = [
+  ...blogPosts.map((post: any) => ({ ...post, collectionType: 'blog', url: `/blog/${post.slug}` })),
+  ...tools.map((post: any) => ({ ...post, collectionType: 'tools', url: `/tools/${post.slug}` })),
+  ...labs.map((post: any) => ({ ...post, collectionType: 'labs', url: `/labs/${post.slug}` })),
+  ...sevenSisters.map((post: any) => ({ ...post, collectionType: '7-sisters', url: `/7-sisters/${post.slug}` })),
+  ...happyFrog.map((post: any) => ({ ...post, collectionType: 'happy-frog', url: `/happy-frog/${post.slug}` })),
+  ...helperNotes.map((post: any) => ({ ...post, collectionType: 'helper-notes', url: `/helper-notes/${post.slug}` }))
+];
+
+// Filter for related posts across all collections
+const relatedPosts = allPosts
+  .filter((post: any) => 
     post.slug !== currentSlug && 
-    post.data.categories?.some(cat => categories.includes(cat))
+    post.data.categories?.some((cat: string) => categories.includes(cat))
   )
   .slice(0, 3);
 ---
@@ -21,18 +40,23 @@ const relatedPosts = posts
   <div class="mt-12 pt-8 border-t border-gray-800">
     <h3 class="text-terminal-green text-xl font-bold mb-4">Related Posts</h3>
     <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-      {relatedPosts.map(post => (
+      {relatedPosts.map((post: any) => (
         <a 
-          href={`/blog/${post.slug}`}
+          href={post.url}
           class="block bg-gray-800 rounded-lg p-4 hover:bg-gray-700 transition-colors"
         >
           <h4 class="text-terminal-cyan font-bold mb-2">{post.data.title}</h4>
           <div class="flex gap-2 flex-wrap">
-            {post.data.categories?.map(category => (
+            {post.data.categories?.map((category: string) => (
               <span class="text-xs bg-gray-900 text-terminal-green px-2 py-1 rounded">
                 {category}
               </span>
             ))}
+          </div>
+          <div class="mt-2">
+            <span class="text-xs text-gray-500 bg-gray-900 px-2 py-1 rounded">
+              {post.collectionType}
+            </span>
           </div>
         </a>
       ))}

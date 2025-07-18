@@ -2,14 +2,14 @@
 import Layout from '../../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
 
-const sevenSisters = await getCollection('7-sisters');
-sevenSisters.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+const helperNotes = await getCollection('helper-notes');
+helperNotes.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 ---
 
-<Layout title="The 7-Sisters | ZeroDumb Ethics Journal">
+<Layout title="Helper Notes | ZeroDumb Ethics Journal">
   <div class="terminal-container bg-gray-900 rounded-lg border border-gray-700 overflow-hidden">
     <div class="terminal-header bg-gray-800 px-4 py-2 flex justify-between items-center">
-      <span class="text-gray-300 font-mono">zerodumb@hacking-journal:~/7-sisters$</span>
+      <span class="text-gray-300 font-mono">zerodumb@hacking-journal:~/helper-notes$</span>
       <div class="flex space-x-2">
         <span class="w-3 h-3 rounded-full bg-red-500"></span>
         <span class="w-3 h-3 rounded-full bg-yellow-500"></span>
@@ -17,29 +17,29 @@ sevenSisters.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
       </div>
     </div>
     <div class="p-6">
-      <h1 class="text-3xl font-bold text-terminal-green mb-8">The 7-Sisters</h1>
+      <h1 class="text-3xl font-bold text-terminal-green mb-8">Helper Notes</h1>
       <div class="space-y-8">
-        {sevenSisters.map(sister => (
+        {helperNotes.map(note => (
           <article class="border-b border-gray-800 pb-8 last:border-0">
             <h2 class="text-2xl font-bold mb-2">
-              <a href={`/7-sisters/${sister.slug}`} class="text-terminal-cyan hover:text-terminal-green">
-                {sister.data.title}
+              <a href={`/helper-notes/${note.slug}`} class="text-terminal-cyan hover:text-terminal-green">
+                {note.data.title}
               </a>
             </h2>
             <div class="flex items-center gap-4 text-sm text-gray-400 mb-4">
-              <time>{sister.data.pubDate.toLocaleDateString()}</time>
-              {sister.data.categories && (
+              <time>{note.data.pubDate.toLocaleDateString()}</time>
+              {note.data.categories && (
                 <div class="flex gap-2">
-                  {sister.data.categories.map(category => (
+                  {note.data.categories.map((category: string) => (
                     <span class="bg-gray-800 text-terminal-cyan px-2 py-1 rounded">{category}</span>
                   ))}
                 </div>
               )}
             </div>
-            <p class="text-gray-300">{sister.data.description}</p>
+            <p class="text-gray-300">{note.data.description}</p>
           </article>
         ))}
       </div>
     </div>
   </div>
-</Layout>
+</Layout> 

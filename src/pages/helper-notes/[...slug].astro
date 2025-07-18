@@ -1,0 +1,29 @@
+---
+import { getCollection, type CollectionEntry } from 'astro:content';
+import HelperNotesLayout from '../../layouts/helper-notes.astro';
+
+export async function getStaticPaths() {
+  const helperNotes = await getCollection('helper-notes');
+  return helperNotes.map(note => ({
+    params: { slug: note.slug },
+    props: { note },
+  }));
+}
+
+interface Props {
+  note: CollectionEntry<'helper-notes'>;
+}
+
+const { note } = Astro.props;
+const { Content } = await note.render();
+---
+
+<HelperNotesLayout 
+  title={note.data.title}
+  pubDate={note.data.pubDate}
+  description={note.data.description}
+  categories={note.data.categories}
+  slug={note.slug}
+>
+  <Content />
+</HelperNotesLayout> 

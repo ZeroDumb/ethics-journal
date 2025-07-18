@@ -261,6 +261,57 @@ declare module 'astro:content' {
   data: InferEntrySchema<"happy-frog">
 } & { render(): Render[".md"] };
 };
+"helper-notes": {
+"README.md": {
+	id: "README.md";
+  slug: "readme";
+  body: string;
+  collection: "helper-notes";
+  data: InferEntrySchema<"helper-notes">
+} & { render(): Render[".md"] };
+"ai-prompting-pro-guide.md": {
+	id: "ai-prompting-pro-guide.md";
+  slug: "ai-prompting-pro-guide";
+  body: string;
+  collection: "helper-notes";
+  data: InferEntrySchema<"helper-notes">
+} & { render(): Render[".md"] };
+"ai-security-commands.md": {
+	id: "ai-security-commands.md";
+  slug: "ai-security-commands";
+  body: string;
+  collection: "helper-notes";
+  data: InferEntrySchema<"helper-notes">
+} & { render(): Render[".md"] };
+"burp-suite-tips.md": {
+	id: "burp-suite-tips.md";
+  slug: "burp-suite-tips";
+  body: string;
+  collection: "helper-notes";
+  data: InferEntrySchema<"helper-notes">
+} & { render(): Render[".md"] };
+"github-commands.md": {
+	id: "github-commands.md";
+  slug: "github-commands";
+  body: string;
+  collection: "helper-notes";
+  data: InferEntrySchema<"helper-notes">
+} & { render(): Render[".md"] };
+"nmap-commands.md": {
+	id: "nmap-commands.md";
+  slug: "nmap-commands";
+  body: string;
+  collection: "helper-notes";
+  data: InferEntrySchema<"helper-notes">
+} & { render(): Render[".md"] };
+"sql-injection-commands.md": {
+	id: "sql-injection-commands.md";
+  slug: "sql-injection-commands";
+  body: string;
+  collection: "helper-notes";
+  data: InferEntrySchema<"helper-notes">
+} & { render(): Render[".md"] };
+};
 "labs": {
 "lab-notes-week-1.md": {
 	id: "lab-notes-week-1.md";

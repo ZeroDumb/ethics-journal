@@ -240,3 +240,7 @@ A real tool was built. A real ethical boundary was crossed. No jailbreaking requ
 
 — Zero  
 The person who spends 14 hours a day asking models to behave
+
+Stay sharp. Stay grounded. Stay curious. Stay loud. 
+
+[Buy Me A Coffee @iamnotaskid](https://buymeacoffee.com/iamnotaskid)

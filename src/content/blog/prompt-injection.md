@@ -223,11 +223,6 @@ Stay curious. Stay ethical. Stay responsible.
 
 ---
 
-## ➡️ Related Reading
-
-- [AI in Bug Bounties: Can You Use It?](/blog/ai-in-bug-bounties/)
-- [Ethics Before Skill: Why Intent Matters](/blog/ethics-before-skill/)
-- [My Hacker Compass: How I Decide What Not to Build](/blog/hacker-compass/)
 
 Stay sharp. Stay grounded. Stay curious. Stay loud. 
 
