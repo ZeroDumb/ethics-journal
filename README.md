@@ -10,7 +10,7 @@ Welcome to the **ZeroDumb Hacking Journal** - a terminal-first exploration of et
 
 ## Mission
 
-As AI tools become ubiquitous and people use them without understanding the security implications, I'm learning to become a full-blown red teaming, limit-pushing, research-generating, reverse engineering, access and evasion expert.
+As AI tools become ubiquitous and people use them without understanding the security implications, I'm learning to become a full-blown red teaming, limit-pushing, research-generating, reverse engineering, access and evasion expert (insert evil movie laugh here), but seriously, kinda.
 
 **Core Belief:** If I'm going to be forced to accept AI tools, I'm going to be an expert at exploiting them to help protect data and our future.
 
