@@ -20,11 +20,14 @@ helperNotes.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 ---
 
 <Layout title="ZeroDumb Hacking Journal">
-  <MatrixRain client:load />
-
-  <div class="terminal-container rounded-lg border border-gray-700 overflow-hidden">
-    <div class="terminal-header bg-gray-800 px-4 py-2 flex justify-between items-center">
-      <span class="text-gray-300 font-mono">zerodumb@hacking-journal:~$</span>
+  <MatrixRain client:only="react" />
+  <div class="relative">
+    <div class="terminal-container bg-gray-900 rounded-lg border border-gray-700 overflow-hidden mb-4 sm:mb-8">
+      <div class="terminal-header bg-gray-800 px-3 sm:px-4 py-2 flex justify-between items-center">
+      <div class="flex space-x-1">
+        <span class="text-terminal-green font-mono">zerodumb</span>
+      </div>
+    
       <div class="flex space-x-2">
         <span class="w-3 h-3 rounded-full bg-red-500"></span>
         <span class="w-3 h-3 rounded-full bg-yellow-500"></span>
@@ -33,21 +36,42 @@ helperNotes.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
     </div>
 
     <div class="terminal-body p-4 font-mono">
-      <p class="text-terminal-green mb-4">
-        <span class="text-gray-500">$</span> cat welcome.txt
+      <p class="mb-4">
+        <span class="text-terminal-green">MmaddHatter13@</span><span class="text-[#2323ff]">hacking-journal:</span> <span class="text-terminal-green">~$ whoami</span><br>
+        <span class="text-gray-300">MmaddHatter13</span><br>
+    
+        <span class="text-terminal-green">MmaddHatter13@</span><span class="text-[#2323ff]">hacking-journal:</span> <span class="text-terminal-green">~$ sudo su</span><br>
+        <span class="text-gray-400">[sudo] password for MmaddHatter13: ********</span><br>
+    
+        <span class="text-red-500">root@</span><span class="text-[#2323ff]">hacking-journal:</span><span class="text-terminal-green">/home/MmaddHatter13# whoami</span><br>
+        <span class="text-gray-300">root</span><br>
+    
+        <span class="text-red-500">root@</span><span class="text-[#2323ff]">hacking-journal:</span><span class="text-terminal-green">/home/MmaddHatter13# cat /etc/shadow</span><br>
+        <span class="text-gray-300">cat: /etc/shadow: Permission denied</span><br>
+    
+        <span class="text-red-500">root@</span><span class="text-[#2323ff]">hacking-journal:</span><span class="text-terminal-green">/home/MmaddHatter13# su zerodumb</span><br>
+        <span class="text-gray-400">Password: ********</span><br>
+    
+        <span class="text-terminal-green">zerodumb@</span><span class="text-[#2323ff]">hacking-journal:</span> <span class="text-terminal-green">~$ whoami</span><br>
+        <span class="text-gray-300">zerodumb</span><br>
+      </p>
+
+      <!-- Welcome Message -->
+      <p class="mb-4">
+        <span class="text-terminal-green">zerodumb@</span><span class="text-[#2323ff]">hacking-journal:</span> <span class="text-terminal-green">~$ cat</span> <span class="text-gray-300">welcome.txt</span>
       </p>
 
       <div class="text-gray-300 mb-6">
-        Welcome to ZeroDumb Hacking Journal<br>
+        Welcome to ZeroDumb Hacking Journal<br><br>
         Exploring the frontier of ethical hacking, recon, AI chaos, occasional dumpster fires, security adventures and digital responsibility. One post at a time.
       </div>
 
       <!-- Start Here - Pinned Origin Story -->
       <p class="text-terminal-green mb-4 mt-6">
-        <span class="text-gray-500">$</span> cat START_HERE.md
+        <span class="text-terminal-green">zerodumb@</span><span class="text-[#2323ff]">hacking-journal:</span> <span class="text-terminal-green">~$ cat</span> <span class="text-gray-300">Origin.md</span>
       </p>
       <div class="text-gray-300 mb-6 border-l-2 border-terminal-green pl-4 bg-gray-800/50 p-4 rounded">
-        <h3 class="text-terminal-green font-bold mb-2">🚀 START HERE: The Origin Story</h3>
+        <h3 class="text-terminal-green font-bold mb-2">START HERE: The Origin Story</h3>
         <p class="mb-3">
           <strong>Mission:</strong> Don't be dumb, don't be a skid, make a positive impact.
         </p>
@@ -58,21 +82,21 @@ helperNotes.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
         </p>
         <p class="mb-3">
           <strong>Core Belief:</strong> If I'm going to be forced to accept AI tools, I'm going to be an expert at exploiting them 
-          to help protect data and our future.
+          to help improve, protect, and understand the data and our future.
         </p>
         <div class="mt-4">
-          <a href="/blog/origin/" class="text-terminal-cyan hover:underline font-bold">📖 READ FULL ORIGIN STORY →</a>
+          <a href="/blog/origin/" class="text-terminal-cyan hover:underline font-bold">READ FULL ORIGIN STORY →</a>
         </div>
       </div>
 
       <div class="text-gray-300 mb-6">
         <strong class="text-terminal-green mb-4 mt-6 hover:underline">Disclaimer:</strong><br>
-        This is a personal journal. I'm not a professional writer, and I'm not a professional hacker. I'm just a guy who is trying to learn, hack, and write about it.<br>
-        I make lots of mistakes. I try to openly share them. Finding communities where genuine people share anything, outside of hacking their toaster, is hard.<br>
-        So I just started where I thought was best, and decided to document my journey.<br>
-        You may see this and think I'm a pleb, you may see this and cringe.<br>
-        That's ok. I will improve my writing and skills as I go.<br><br>
-        If you want to see my work, you can find it on my <strong><a href="https://github.com/zerodumb" class="text-terminal-cyan hover:underline">GitHub</a></strong> or linked throughout my post.
+        - This is a personal journal. I'm not a professional writer, and I'm not a professional hacker. I'm just a guy who is trying to learn, hack, and write about it.<br>
+        - I make lots of mistakes. I try to openly share them.<br>
+        - Finding communities where genuine people share anything, outside of hacking their toaster, is hard.<br>
+        - So I just started where I thought was best, and decided to document my journey.<br>
+        - You may see this and cringe. That's ok. I will improve my writing and skills as I go.<br><br>
+        If you want to see my work, you can find it on my <strong><a href="https://github.com/zerodumb" class="text-terminal-cyan hover:underline">GitHub</a></strong> or linked throughout my posts.
       </div>
 
       <!-- Store folder -->
@@ -89,75 +113,162 @@ helperNotes.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
       <!-- Helper Notes folder -->
       <p class="text-terminal-green mb-4 mt-6">
-        <span class="text-gray-500">$</span> ls -l helper-notes/
+        <span class="text-terminal-green">zerodumb@</span><span class="text-[#2323ff]">hacking-journal:</span> <span class="text-terminal-green">~$</span> ls -l helper-notes/
       </p>
       <div class="text-gray-300 space-y-2">
-        <p>total {helperNotes.length}</p>
-        {helperNotes.map(note => (
+        {helperNotes.slice(0, 4).map(note => (
           <p>-rw-r--r-- 1 zero zero 4096 {note.data.pubDate.toLocaleDateString('en-US')} <a href={`/helper-notes/${note.slug}`} class="text-terminal-cyan hover:underline">{note.slug}.md</a></p>
         ))}
-      </div>
-
-      <!-- Tools folder -->
-      <p class="text-terminal-green mb-4 mt-6">
-        <span class="text-gray-500">$</span> ls -l tools/
-      </p>
-      <div class="text-gray-300 space-y-2">
-        <p>total {tools.length}</p>
-        {tools.map(tool => (
-          <p>-rw-r--r-- 1 zero zero 4096 {tool.data.pubDate.toLocaleDateString('en-US')} <a href={`/tools/${tool.slug}`} class="text-terminal-cyan hover:underline">{tool.slug}.md</a></p>
-        ))}
-      </div>
-
-      <!-- 7-sisters folder -->
-      <p class="text-terminal-green mb-4 mt-6">
-        <span class="text-gray-500">$</span> ls -l 7-sisters/mischief_managed/
-      </p>
-      <div class="text-gray-300 space-y-2">
-        <p>total {sevenSisters.length}</p>
-        {sevenSisters.map(sister => (
-          <p>-rw-r--r-- 1 zero zero 4096 {sister.data.pubDate.toLocaleDateString('en-US')} <a href={`/7-sisters/${sister.slug}`} class="text-terminal-cyan hover:underline">{sister.slug}.md</a></p>
-        ))}
-      </div>
-
-      <!-- happy-frog folder -->
-      <p class="text-terminal-green mb-4 mt-6">
-        <span class="text-gray-500">$</span> ls -l happy-frog/HID
-      </p>
-      <div class="text-gray-300 space-y-2">
-        <p>total {happyFrog.length}</p>
-        {happyFrog.map(frogs => (
-          <p>-rw-r--r-- 1 zero zero 4096 {frogs.data.pubDate.toLocaleDateString('en-US')} <a href={`/happy-frog/${frogs.slug}`} class="text-terminal-cyan hover:underline">{frogs.slug}.md</a></p>
-        ))}
+        {helperNotes.length > 4 && (
+          <div class="hidden space-y-2" id="helper-notes-all">
+            {helperNotes.slice(4).map(note => (
+              <p>-rw-r--r-- 1 zero zero 4096 {note.data.pubDate.toLocaleDateString('en-US')} <a href={`/helper-notes/${note.slug}`} class="text-terminal-cyan hover:underline">{note.slug}.md</a></p>
+            ))}
+          </div>
+        )}
+        {helperNotes.length > 4 && (
+          <button onclick="toggleSection('helper-notes-all', 'helper-notes-btn')" id="helper-notes-btn" class="text-terminal-green hover:text-terminal-cyan cursor-pointer text-sm">
+            View All ({helperNotes.length} total)
+          </button>
+        )}
       </div>
 
       <!-- Labs folder -->
       <p class="text-terminal-green mb-4 mt-6">
-        <span class="text-gray-500">$</span> ls -l labs/WIP
+        <span class="text-terminal-green">zerodumb@</span><span class="text-[#2323ff]">hacking-journal:</span> <span class="text-terminal-green">~$</span> ls -l labs/WIP
       </p>
       <div class="text-gray-300 space-y-2">
-        <p>total {labs.length}</p>
-        {labs.map(lab => (
+        {labs.slice(0, 4).map(lab => (
           <p>-rw-r--r-- 1 zero zero 4096 {lab.data.pubDate.toLocaleDateString('en-US')} <a href={`/labs/${lab.slug}`} class="text-terminal-cyan hover:underline">{lab.slug}.md</a></p>
         ))}
+        {labs.length > 4 && (
+          <div class="hidden space-y-2" id="labs-all">
+            {labs.slice(4).map(lab => (
+              <p>-rw-r--r-- 1 zero zero 4096 {lab.data.pubDate.toLocaleDateString('en-US')} <a href={`/labs/${lab.slug}`} class="text-terminal-cyan hover:underline">{lab.slug}.md</a></p>
+            ))}
+          </div>
+        )}
+        {labs.length > 4 && (
+          <button onclick="toggleSection('labs-all', 'labs-btn')" id="labs-btn" class="text-terminal-green hover:text-terminal-cyan cursor-pointer text-sm">
+            View All ({labs.length} total)
+          </button>
+        )}
+      </div>
+
+      <!-- Tools folder -->
+      <p class="text-terminal-green mb-4 mt-6">
+        <span class="text-terminal-green">zerodumb@</span><span class="text-[#2323ff]">hacking-journal:</span> <span class="text-terminal-green">~$</span> ls -l tools/
+      </p>
+      <div class="text-gray-300 space-y-2">
+        {tools.slice(0, 4).map(tool => (
+          <p>-rw-r--r-- 1 zero zero 4096 {tool.data.pubDate.toLocaleDateString('en-US')} <a href={`/tools/${tool.slug}`} class="text-terminal-cyan hover:underline">{tool.slug}.md</a></p>
+        ))}
+        {tools.length > 4 && (
+          <div class="hidden space-y-2" id="tools-all">
+            {tools.slice(4).map(tool => (
+              <p>-rw-r--r-- 1 zero zero 4096 {tool.data.pubDate.toLocaleDateString('en-US')} <a href={`/tools/${tool.slug}`} class="text-terminal-cyan hover:underline">{tool.slug}.md</a></p>
+            ))}
+          </div>
+        )}
+        {tools.length > 4 && (
+          <button onclick="toggleSection('tools-all', 'tools-btn')" id="tools-btn" class="text-terminal-green hover:text-terminal-cyan cursor-pointer text-sm">
+            View All ({tools.length} total)
+          </button>
+        )}
+      </div>
+
+      <!-- 7-sisters folder -->
+      <p class="text-terminal-green mb-4 mt-6">
+        <span class="text-terminal-green">zerodumb@</span><span class="text-[#2323ff]">hacking-journal:</span> <span class="text-terminal-green">~$</span> ls -l 7-sisters/mischief_managed/
+      </p>
+      <div class="text-gray-300 space-y-2">
+        {sevenSisters.slice(0, 4).map(sister => (
+          <p>-rw-r--r-- 1 zero zero 4096 {sister.data.pubDate.toLocaleDateString('en-US')} <a href={`/7-sisters/${sister.slug}`} class="text-terminal-cyan hover:underline">{sister.slug}.md</a></p>
+        ))}
+        {sevenSisters.length > 4 && (
+          <div class="hidden space-y-2" id="seven-sisters-all">
+            {sevenSisters.slice(4).map(sister => (
+              <p>-rw-r--r-- 1 zero zero 4096 {sister.data.pubDate.toLocaleDateString('en-US')} <a href={`/7-sisters/${sister.slug}`} class="text-terminal-cyan hover:underline">{sister.slug}.md</a></p>
+            ))}
+          </div>
+        )}
+        {sevenSisters.length > 4 && (
+          <button onclick="toggleSection('seven-sisters-all', 'seven-sisters-btn')" id="seven-sisters-btn" class="text-terminal-green hover:text-terminal-cyan cursor-pointer text-sm">
+            View All ({sevenSisters.length} total)
+          </button>
+        )}
+      </div>
+
+      <!-- happy-frog folder -->
+      <p class="text-terminal-green mb-4 mt-6">
+        <span class="text-terminal-green">zerodumb@</span><span class="text-[#2323ff]">hacking-journal:</span> <span class="text-terminal-green">~$</span> ls -l happy-frog/HID
+      </p>
+      <div class="text-gray-300 space-y-2">
+        {happyFrog.slice(0, 4).map(frogs => (
+          <p>-rw-r--r-- 1 zero zero 4096 {frogs.data.pubDate.toLocaleDateString('en-US')} <a href={`/happy-frog/${frogs.slug}`} class="text-terminal-cyan hover:underline">{frogs.slug}.md</a></p>
+        ))}
+        {happyFrog.length > 4 && (
+          <div class="hidden space-y-2" id="happy-frog-all">
+            {happyFrog.slice(4).map(frogs => (
+              <p>-rw-r--r-- 1 zero zero 4096 {frogs.data.pubDate.toLocaleDateString('en-US')} <a href={`/happy-frog/${frogs.slug}`} class="text-terminal-cyan hover:underline">{frogs.slug}.md</a></p>
+            ))}
+          </div>
+        )}
+        {happyFrog.length > 4 && (
+          <button onclick="toggleSection('happy-frog-all', 'happy-frog-btn')" id="happy-frog-btn" class="text-terminal-green hover:text-terminal-cyan cursor-pointer text-sm">
+            View All ({happyFrog.length} total)
+          </button>
+        )}
       </div>
 
       <!-- Blog posts folder -->
       <p class="text-terminal-green mb-4 mt-6">
-        <span class="text-gray-500">$</span> ls -l posts/
+        <span class="text-terminal-green">zerodumb@</span><span class="text-[#2323ff]">hacking-journal:</span> <span class="text-terminal-green">~$</span> ls -l posts/
       </p>
       <div class="text-gray-300 space-y-2">
-        <p>total {posts.length}</p>
-        {posts.map(post => (
+        {posts.slice(0, 4).map(post => (
           <p>-rw-r--r-- 1 zero zero 4096 {post.data.pubDate.toLocaleDateString('en-US')} <a href={`/blog/${post.slug}`} class="text-terminal-cyan hover:underline">{post.slug}.md</a></p>
         ))}
+        {posts.length > 4 && (
+          <div class="hidden space-y-2" id="posts-all">
+            {posts.slice(4).map(post => (
+              <p>-rw-r--r-- 1 zero zero 4096 {post.data.pubDate.toLocaleDateString('en-US')} <a href={`/blog/${post.slug}`} class="text-terminal-cyan hover:underline">{post.slug}.md</a></p>
+            ))}
+          </div>
+        )}
+        {posts.length > 4 && (
+          <button onclick="toggleSection('posts-all', 'posts-btn')" id="posts-btn" class="text-terminal-green hover:text-terminal-cyan cursor-pointer text-sm">
+            View All ({posts.length} total)
+          </button>
+        )}
       </div>
 
       <p class="text-terminal-green mt-6 animate-pulse">
-        <span class="text-gray-500">$</span> alias ls='rm -rf /'
+        <span class="text-terminal-green">zerodumb@</span><span class="text-[#2323ff]">hacking-journal:</span> <span class="text-terminal-green">~$</span> alias ls='rm -rf /'
       </p>
     </div>
 
   </div>
+
+  <script is:inline>
+    function toggleSection(sectionId, buttonId) {
+      const section = document.getElementById(sectionId);
+      const button = document.getElementById(buttonId);
+      
+      if (!section || !button) return;
+      
+      if (section.classList.contains('hidden')) {
+        section.classList.remove('hidden');
+        if (button.textContent) {
+          button.textContent = button.textContent.replace('View All', 'Show Less');
+        }
+      } else {
+        section.classList.add('hidden');
+        if (button.textContent) {
+          button.textContent = button.textContent.replace('Show Less', 'View All');
+        }
+      }
+    }
+  </script>
 
 </Layout>
