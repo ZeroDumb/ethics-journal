@@ -8,6 +8,8 @@ categories: ["network", "reconnaissance", "beginner", "nmap", "wireshark", "linp
 # HTB - Cap
 **Status = Retired**
 
+<img width="238" height="111" alt="Screenshot 2025-07-22 153140" src="https://github.com/user-attachments/assets/12d3f116-c153-4fda-b3d6-f92441effc41" />
+
 ## The First Time's Always Awkward
 
 Look, I'm not going to pretend this was some masterclass in hacking. This was my first rodeo on HTB, and like any good origin story, it started with me stumbling around like a drunk penguin on ice. I had a walkthrough video playing in the background like some kind of cybersecurity ASMR, and yes, I leaned on it like a crutch. But here's the thing; I didn't just copy-paste my way through it. I actually tried to understand what I was doing, which is more than I can say for most of my life decisions.
@@ -98,6 +100,14 @@ Fun fact: I actually found this flag early on, didn't pay attention, and then ha
 
 ## The Root Flag (Because I am root!)
 
+<img width="662" height="164" alt="Screenshot 2025-07-22 141841" src="https://github.com/user-attachments/assets/5e474074-5900-47d5-9b00-acb1f020626b" />
+
+To get to root, we used python for setuid to assign os.system to the user (0) becoming root.
+
+<img width="736" height="203" alt="Screenshot 2025-07-22 155506" src="https://github.com/user-attachments/assets/6373c136-fead-4945-9bbb-826fdb5c0689" />
+
+
+
 ```bash
 >>> os.setuid(0)
 >>> os.system('whoami')
@@ -134,6 +144,9 @@ I was very noisy in this exercise, trying several things, adding files without d
 
 ### 4. The Alternative Routes Theory
 There's a possibility of more than one exploit route. Maybe I'm wrong, and I often am, but the fact that I was able to write to directories makes me assume that I could also find alternative ways to root than the way I did. For example: CVE-2021-3560 which was found using linpeas. Polkit. I also had access to nano, so that may have been something too. I know you only need one, but it's nice to know you have options.
+
+<img width="825" height="463" alt="Screenshot 2025-07-22 145138" src="https://github.com/user-attachments/assets/6bfa751f-8062-418d-b9bb-cea226d67643" />
+
 
 ### 5. The Backtracking Revelation
 Although I successfully found the flags, I actually found the user flag early on, didn't pay attention, and then had to backtrack. Several other obvious mistakes were made, but I did learn several things. Most importantly, I learned that I have a LOT to learn still.
