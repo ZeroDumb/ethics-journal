@@ -313,16 +313,9 @@ declare module 'astro:content' {
 } & { render(): Render[".md"] };
 };
 "labs": {
-"lab-notes-week-1.md": {
-	id: "lab-notes-week-1.md";
-  slug: "lab-notes-week-1";
-  body: string;
-  collection: "labs";
-  data: InferEntrySchema<"labs">
-} & { render(): Render[".md"] };
-"sample-lab.md": {
-	id: "sample-lab.md";
-  slug: "sample-lab";
+"htb-cap.md": {
+	id: "htb-cap.md";
+  slug: "htb-cap";
   body: string;
   collection: "labs";
   data: InferEntrySchema<"labs">
