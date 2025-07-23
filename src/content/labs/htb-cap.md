@@ -82,6 +82,20 @@ The box was already logged into Nathan's dashboard on startup, which was either 
 ### The PCAP Adventure
 Luckily for us, Nathan already had the ability to download files from his dashboard. It's like finding out your target has a "Download" button that says "Click here for free flags." I downloaded the pcap files and then used Wireshark to read and follow the digital breadcrumbs like some kind of cyber detective.
 
+### View-Source
+This didn't do much for me, unable to really inject anything, just basic python frame. 
+
+### SSH and FTP
+Once you download the pcap files like a champ, you will then begin following tcp paths until you find one ftp, follow, reveals plain text credentials. 
+
+User: nathan
+Password: Buck3tH4TF0RM3!
+
+At this point finding the user flag is as simple as ssh nathan@10.10.10.245 password, ls -la, cat user.txt 
+
+Use FTP -V for more details
+
+
 ---
 
 ## The User Flag (Or How I Found It Twice)
